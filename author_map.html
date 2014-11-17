@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- I recommend you host this file on your own, since this will change without warning -->
+<script src="datamaps/datamaps.world.min.js"></script>
+<div id="container1" style="position: relative; width: 80%; height: 600px;"></div>
+
+
+<script>
+    //basic map config with custom fills, mercator projection
+    var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+
+        fills: {
+            defaultFill: '#f0af0a',
+            lt50: 'rgba(0,244,244,0.9)',
+            gt50: 'red'
+        },
+
+        data: {
+            /*USA: {fillKey: 'lt50' },
+             RUS: {fillKey: 'lt50' },
+             CAN: {fillKey: 'lt50' },
+             BRA: {fillKey: 'gt50' },
+             ARG: {fillKey: 'gt50'},
+             COL: {fillKey: 'gt50' },
+             AUS: {fillKey: 'gt50' },
+             ZAF: {fillKey: 'gt50' },
+             MAD: {fillKey: 'gt50' }*/
+        }
+    })
+
+
+
+    $(document).ready(function  make_bubbles() {
+        longitude = [];
+        latitude = [];
+        names = [];
+        size = [];
+        d3.json("data/parsed_book_data.json",function(error,data){
+            if (error) return console.warn(error);
+            for(var i = 0; i < data.length; i++)
+            {
+                if(data[i]["author_lng"] && data[i]["author_lat"]) {
+                    longitude[i] = data[i]["author_lng"];
+                    latitude[i] = data[i]["author_lat"];
+                    console.log(latitude[i])
+                }
+
+                if(data[i]["author"])
+                {
+                    names[i] = data[i]["author"];
+                }
+
+                if(data[i]["my_rating"])
+                {
+                    size[i] = data[i]["my_rating"];
+                }
+
+                else
+                {
+                    size[i] = data[i]["average_rating"];
+                }
+            }
+
+            bubbles = new Array();
+            for(var i = 0; i < longitude.length; i++)
+            {
+                if(longitude[i])
+                {
+                    if(latitude[i])
+                    {
+                        bubbles.push({'name' : names[i], 'latitude' : latitude[i],
+                            'longitude' : longitude[i], 'radius': size[i]*2, 'fillKey' : 'gt50'});
+                    }
+                }
+            }
+
+            console.log(bubbles);
+
+            map.bubbles(bubbles, {
+                popupTemplate: function (geo, data) {
+                    return "<div class='hoverinfo'>It is " + data.name + "</div>";
+                }
+            });
+        })
+    })
+</script>
+</body>

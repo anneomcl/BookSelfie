@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script>
+            var dataset = [
+                ["1954", 100],
+                ["2009", 100],
+                ["2004", 100],
+                ["1861", 100],
+                ["1600", 100],
+                ["800", 100]
+            ];
+            var w = 4000;
+            var h = 1000;
+            var padding = 20;
+
+            var parseDate = d3.time.format("%Y").parse;
+            var mindate = parseDate("800"),
+                    maxdate = parseDate("2015");
+
+            var zoom = d3.behavior.zoom()
+                    .scaleExtent([1, 10])
+                    .on("zoom", zoomed);
+
+            var xScale = d3.time.scale()
+                    .domain([mindate, maxdate])
+                    .range([padding, w - padding * 2]);
+
+            var yScale = d3.scale.linear()
+                    .domain([0, d3.max(dataset, function (d) {
+                        return d[1] + 100;
+                    })])
+                    .range([0, h]);
+
+            var svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", w)
+                    .attr("height", h);
+
+
+            svg.selectAll("circle")
+                    .data(dataset)
+                    .enter()
+                    .append("circle")
+                    .attr("cx", function(d) {
+                        return xScale(parseDate(d[0]));
+                    })
+                    .attr("cy", function (d) {
+                        return yScale(d[1]);
+                    })
+                    .attr("r", 20)
+                    .call(zoom);
+
+            function zoomed() {
+                container.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+            }
+        </script>
+    </body>
+</html>

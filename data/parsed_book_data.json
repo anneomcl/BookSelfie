@@ -1,93 +1,121 @@
 [
     {
-        "lat":36.778261,
         "lng":-119.4179324,
         "setting":[
             "California",
             "Monterey",
             "United States"
         ],
-        "id":"4799",
-        "my_rating":"0",
+        "lat":36.778261,
+        "author":"John Steinbeck",
         "average_rating":"3.98",
+        "original_pub_year":"1945",
+        "author_lng":-121.127021,
+        "my_rating":"0",
+        "id":"4799",
         "title":"Cannery Row",
-        "original_pub_year":"1945"
+        "author_birthplace":"Salinas Valley, California, The United States",
+        "author_lat":36.2056814
     },
     {
-        "average_rating":"4.07",
+        "original_pub_year":"1985",
+        "setting":[
+
+        ],
+        "author_birthplace":"",
+        "my_rating":"0",
         "id":"631932",
-        "my_rating":"0",
-        "setting":[
-
-        ],
         "title":"The Greedy Python",
-        "original_pub_year":"1985"
+        "average_rating":"4.07",
+        "author":"Richard Buckley"
     },
     {
-        "average_rating":"9",
+        "original_pub_year":"1994",
+        "setting":[
+
+        ],
+        "author_birthplace":"",
+        "my_rating":"5",
         "id":"12543",
-        "my_rating":"5",
-        "setting":[
-
-        ],
         "title":"Bird by Bird: Some Instructions on Writing and Life",
-        "original_pub_year":"1994"
+        "average_rating":"9",
+        "author":"Richard Buckley"
     },
     {
-        "average_rating":"4.06",
-        "id":"7996",
+        "original_pub_year":"1986",
+        "author_lng":-2.9915726,
+        "setting":[
+
+        ],
+        "author_lat":53.4083714,
         "my_rating":"5",
-        "setting":[
-
-        ],
+        "id":"7996",
         "title":"Redwall (Redwall, #1)",
-        "original_pub_year":"1986"
+        "author":"Brian Jacques",
+        "average_rating":"4.06",
+        "author_birthplace":"Liverpool, The United Kingdom"
     },
     {
-        "average_rating":"3.96",
-        "id":"306150",
-        "my_rating":"0",
+        "original_pub_year":"1314",
+        "author_lng":11.2480006,
         "setting":[
 
         ],
+        "author_lat":43.7710332,
+        "my_rating":"0",
+        "id":"306150",
         "title":"The Inferno",
-        "original_pub_year":"1314"
+        "author":"Dante Alighieri",
+        "average_rating":"3.96",
+        "author_birthplace":"Florence, Italy"
     },
     {
-        "average_rating":"4.44",
-        "id":"13496",
-        "my_rating":"3",
+        "original_pub_year":"1996",
+        "author_lng":-74.1143091,
         "setting":[
             "The Lands of Ice and Fire "
         ],
+        "author_lat":40.6687141,
+        "my_rating":"3",
+        "id":"13496",
         "title":"A Game of Thrones (A Song of Ice and Fire, #1)",
-        "original_pub_year":"1996"
+        "author":"George RR Martin",
+        "average_rating":"4.44",
+        "author_birthplace":"Bayonne, New Jersey, The United States"
     },
     {
-        "average_rating":"3.89",
-        "id":"119322",
-        "my_rating":"4",
+        "original_pub_year":"1995",
+        "author_lng":1.297355,
         "setting":[
 
         ],
+        "author_lat":52.6308859,
+        "my_rating":"4",
+        "id":"119322",
         "title":"The Golden Compass (His Dark Materials, #1)",
-        "original_pub_year":"1995"
+        "author":"Philip Pullman",
+        "average_rating":"3.89",
+        "author_birthplace":"Norwich, Norfolk, England, The United Kingdom"
     },
     {
-        "lat":43.0481221,
         "lng":-76.14742439999999,
         "setting":[
             "Syracuse, New York",
             "United States"
         ],
-        "id":"439288",
-        "my_rating":"3",
+        "lat":43.0481221,
+        "author":"Laurie Halse Anderson",
         "average_rating":"3.97",
+        "original_pub_year":"1999",
+        "author_lng":-74.9813084,
+        "my_rating":"3",
+        "id":"439288",
         "title":"Speak",
-        "original_pub_year":"1999"
+        "author_birthplace":"Postdam, New York, The United States",
+        "author_lat":44.6697805
     },
     {
-        "lat":37.09024,
+        "original_pub_year":"2004",
         "lng":-95.712891,
         "setting":[
             "United States",
@@ -95,311 +123,410 @@
             "Rhode Island",
             "United States"
         ],
-        "id":"10917",
+        "author_birthplace":"",
         "my_rating":"3",
+        "id":"10917",
+        "title":"My Sister\\'s Keeper",
+        "lat":37.09024,
         "average_rating":"4.03",
-        "title":"My Sisters Keeper",
-        "original_pub_year":"2004"
+        "author":"Jodi Picoult"
     },
     {
-        "lat":51.55577390000001,
         "lng":-1.7797176,
         "setting":[
             "Swindon, England",
             "London, England",
             "United Kingdom"
         ],
-        "id":"1618",
-        "my_rating":"4",
+        "lat":51.55577390000001,
+        "author":"Mark Haddon",
         "average_rating":"3.82",
+        "original_pub_year":"2003",
+        "author_lng":-0.9026560000000001,
+        "my_rating":"4",
+        "id":"1618",
         "title":"The Curious Incident of the Dog in the Night-Time",
-        "original_pub_year":"2003"
+        "author_birthplace":"Northampton, The United Kingdom",
+        "author_lat":52.240477
     },
     {
-        "average_rating":"4.26",
-        "id":"1617",
-        "my_rating":"5",
+        "original_pub_year":"1958",
+        "author_lng":26.1424023,
         "setting":[
 
         ],
+        "author_lat":44.4579033,
+        "my_rating":"5",
+        "id":"1617",
         "title":"Night (The Night Trilogy, #1)",
-        "original_pub_year":"1958"
+        "author":"Elie Wiesel",
+        "average_rating":"4.26",
+        "author_birthplace":"Sighet, Romania"
     },
     {
-        "lat":38.3242916,
         "lng":-76.5168989,
         "setting":[
             "Middle-earth"
         ],
-        "id":"5907",
-        "my_rating":"4",
+        "lat":38.3242916,
+        "author":"JRR Tolkien",
         "average_rating":"4.20",
+        "original_pub_year":"1937",
+        "author_lng":26.216667,
+        "my_rating":"4",
+        "id":"5907",
         "title":"The Hobbit",
-        "original_pub_year":"1937"
+        "author_birthplace":"Bloemfontein, South Africa",
+        "author_lat":-29.116667
     },
     {
-        "lat":40.7127837,
         "lng":-74.0059413,
         "setting":[
             "New York City, New York",
             "Agerstown, Pennsylvania",
             "United States"
         ],
-        "id":"5107",
-        "my_rating":"4",
+        "lat":40.7127837,
+        "author":"JD Salinger",
         "average_rating":"3.77",
+        "original_pub_year":"1951",
+        "author_lng":-73.959722,
+        "my_rating":"4",
+        "id":"5107",
         "title":"The Catcher in the Rye",
-        "original_pub_year":"1951"
+        "author_birthplace":"Manhattan, New York, The United States",
+        "author_lat":40.790278
     },
     {
-        "average_rating":"3.56",
-        "id":"37781",
-        "my_rating":"3",
+        "original_pub_year":"1958",
+        "author_lng":6.8914024,
         "setting":[
             "Umuofia",
             "Nigeria"
         ],
+        "author_lat":6.1428164,
+        "my_rating":"3",
+        "id":"37781",
         "title":"Things Fall Apart (The African Trilogy, #1)",
-        "original_pub_year":"1958"
+        "author":"Chinua Achebe",
+        "average_rating":"3.56",
+        "author_birthplace":"Ogidi, Anambra, Nigeria"
     },
     {
-        "lat":35.6894875,
         "lng":139.6917064,
         "setting":[
             "Tokyo",
             "Japan"
         ],
-        "id":"10357575",
-        "my_rating":"5",
+        "lat":35.6894875,
+        "author":"Haruki Murakami",
         "average_rating":"3.83",
+        "original_pub_year":"2010",
+        "author_lng":135.7680294,
+        "my_rating":"5",
+        "id":"10357575",
         "title":"1Q84 (1Q84, #1-3)",
-        "original_pub_year":"2010"
+        "author_birthplace":"Kyoto, Japan",
+        "author_lat":35.0116363
     },
     {
-        "average_rating":"3.99",
-        "id":"14142",
-        "my_rating":"3",
+        "original_pub_year":"1956",
+        "author_lng":8.6821267,
         "setting":[
 
         ],
+        "author_lat":50.1109221,
+        "my_rating":"3",
+        "id":"14142",
         "title":"The Art of Loving",
-        "original_pub_year":"1956"
+        "author":"Erich Fromm",
+        "average_rating":"3.99",
+        "author_birthplace":"Frankfurt am Main, Germany"
     },
     {
-        "lat":35.86166,
         "lng":104.195397,
         "setting":[
             "China"
         ],
-        "id":"533465",
-        "my_rating":"3",
+        "lat":35.86166,
+        "author":"Dai Sijie",
         "average_rating":"3.59",
+        "original_pub_year":"2000",
+        "author_lng":104.066541,
+        "my_rating":"3",
+        "id":"533465",
         "title":"Balzac and the Little Chinese Seamstress",
-        "original_pub_year":"2000"
+        "author_birthplace":"Chengdu, Sichuan, China",
+        "author_lat":30.572269
     },
     {
-        "average_rating":"3.44",
-        "id":"19501",
-        "my_rating":"3",
+        "original_pub_year":"2000",
+        "author_lng":-73.0514965,
         "setting":[
 
         ],
+        "author_lat":41.5581525,
+        "my_rating":"3",
+        "id":"19501",
         "title":"Eat, Pray, Love",
-        "original_pub_year":"2000"
+        "author":"Elizabeth Gilbert",
+        "average_rating":"3.44",
+        "author_birthplace":"Waterbury, Connecticut, The United States"
     },
     {
-        "average_rating":"4.29",
-        "id":"6294",
-        "my_rating":"4",
+        "original_pub_year":"1986",
+        "author_lng":-0.0936496,
         "setting":[
             "Ingary",
             "Porthaven",
             "Wales",
             "United Kingdom"
         ],
-        "title":"Howls Moving Castle (Howls Moving Castle, #1)",
-        "original_pub_year":"1986"
+        "author_lat":51.4309209,
+        "my_rating":"4",
+        "id":"6294",
+        "title":"Howl\\'s Moving Castle (Howl\\'s Moving Castle, #1)",
+        "author":"Diana Wynne Jones",
+        "average_rating":"4.29",
+        "author_birthplace":"London, England, The United Kingdom"
     },
     {
-        "lat":56.26392,
+        "original_pub_year":"800",
         "lng":9.501785,
         "setting":[
             "Denmark",
             "Geatland",
             "Sweden"
         ],
+        "author_birthplace":null,
+        "my_rating":"3",
         "id":"52357",
-        "my_rating":"3",
-        "average_rating":"3.38",
         "title":"Beowulf: A New Verse Translation",
-        "original_pub_year":"800"
+        "lat":56.26392,
+        "average_rating":"3.38",
+        "author":"Unknown"
     },
     {
-        "average_rating":"3.60",
-        "id":"19351",
+        "original_pub_year":"1500",
+        "setting":[
+
+        ],
+        "author_birthplace":null,
         "my_rating":"5",
-        "setting":[
-
-        ],
+        "id":"19351",
         "title":"The Epic of Gilgamesh",
-        "original_pub_year":"1500"
+        "average_rating":"3.60",
+        "author":"Anonymous"
     },
     {
-        "average_rating":"3.60",
-        "id":"17645",
-        "my_rating":"3",
+        "original_pub_year":"2003",
+        "author_lng":-75.69719309999999,
         "setting":[
 
         ],
+        "author_lat":45.4215296,
+        "my_rating":"3",
+        "id":"17645",
         "title":"The Penelopiad",
-        "original_pub_year":"2003"
+        "author":"Margaret Atwood",
+        "average_rating":"3.60",
+        "author_birthplace":"Ottawa, Ontario, Canada"
     },
     {
-        "lat":37.09024,
         "lng":-95.712891,
         "setting":[
             "United States"
         ],
-        "id":"11741",
-        "my_rating":"4",
+        "lat":37.09024,
+        "author":"Marilynne Robinson",
         "average_rating":"3.83",
+        "original_pub_year":"1980",
+        "author_lng":-116.553465,
+        "my_rating":"4",
+        "id":"11741",
         "title":"Housekeeping",
-        "original_pub_year":"1980"
+        "author_birthplace":"Sandpoint, Idaho, The United States",
+        "author_lat":48.276577
     },
     {
-        "lat":40.7127837,
         "lng":-74.0059413,
         "setting":[
             "New York City, New York",
             "United States"
         ],
-        "id":"16981",
-        "my_rating":"5",
+        "lat":40.7127837,
+        "author":"Ralph Ellison",
         "average_rating":"3.80",
+        "original_pub_year":"1952",
+        "author_lng":-97.5164276,
+        "my_rating":"5",
+        "id":"16981",
         "title":"Invisible Man",
-        "original_pub_year":"1952"
+        "author_birthplace":"Oklahoma City, Oklahoma, The United States",
+        "author_lat":35.4675602
     },
     {
-        "average_rating":"4.32",
+        "original_pub_year":"1946",
+        "author_lng":16.3738189,
+        "setting":[
+
+        ],
+        "author_lat":48.2081743,
+        "my_rating":"5",
         "id":"4069",
-        "my_rating":"5",
+        "title":"Man's Search for Meaning",
+        "author":"Viktor E Frankl",
+        "average_rating":"4.32",
+        "author_birthplace":"Vienna, Austria"
+    },
+    {
+        "original_pub_year":"1930",
+        "author_lng":13.341727,
         "setting":[
 
         ],
-        "title":"Mans Search for Meaning",
-        "original_pub_year":"1946"
-    },
-    {
-        "average_rating":"3.71",
-        "id":"357636",
+        "author_lat":50.9128283,
         "my_rating":"1",
-        "setting":[
-
-        ],
+        "id":"357636",
         "title":"Civilization and Its Discontents",
-        "original_pub_year":"1930"
+        "author":"Sigmund Freud",
+        "average_rating":"3.71",
+        "author_birthplace":"Freiberg in Mahren, Moravia, Austrian Empire, Czech Republic"
     },
     {
-        "average_rating":"3.90",
-        "id":"360882",
+        "original_pub_year":"1956",
+        "author_lng":23.7293599,
+        "setting":[
+
+        ],
+        "author_lat":37.983917,
         "my_rating":"5",
-        "setting":[
-
-        ],
+        "id":"360882",
         "title":"Phaedrus",
-        "original_pub_year":"1956"
+        "author":"Plato",
+        "average_rating":"3.90",
+        "author_birthplace":"Athens, Greece"
     },
     {
-        "average_rating":"3.72",
-        "id":"629",
+        "original_pub_year":"1974",
+        "author_lng":-93.26666999999999,
+        "setting":[
+
+        ],
+        "author_lat":44.983334,
         "my_rating":"2",
-        "setting":[
-
-        ],
+        "id":"629",
         "title":"Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values",
-        "original_pub_year":"1974"
+        "author":"Robert M Pirsig",
+        "average_rating":"3.72",
+        "author_birthplace":"Minneapolis, MN, The United States"
     },
     {
-        "average_rating":"3.74",
-        "id":"19380",
-        "my_rating":"4",
+        "original_pub_year":"1759",
+        "author_lng":2.3522219,
         "setting":[
 
         ],
+        "author_lat":48.856614,
+        "my_rating":"4",
+        "id":"19380",
         "title":"Candide",
-        "original_pub_year":"1759"
+        "author":"Voltaire",
+        "average_rating":"3.74",
+        "author_birthplace":"Paris, France"
     },
     {
-        "lat":36.204824,
         "lng":138.252924,
         "setting":[
             "Japan"
         ],
-        "id":"10374",
-        "my_rating":"4",
+        "lat":36.204824,
+        "author":"Haruki Murakami",
         "average_rating":"4.15",
+        "original_pub_year":"1985",
+        "author_lng":135.7680294,
+        "my_rating":"4",
+        "id":"10374",
         "title":"Hard-Boiled Wonderland and the End of the World",
-        "original_pub_year":"1985"
+        "author_birthplace":"Kyoto, Japan",
+        "author_lat":35.0116363
     },
     {
-        "average_rating":"4.18",
-        "id":"11275",
-        "my_rating":"4",
+        "original_pub_year":"1994",
+        "author_lng":135.7680294,
         "setting":[
 
         ],
+        "author_lat":35.0116363,
+        "my_rating":"4",
+        "id":"11275",
         "title":"The Wind-Up Bird Chronicle",
-        "original_pub_year":"1994"
+        "author":"Haruki Murakami",
+        "average_rating":"4.18",
+        "author_birthplace":"Kyoto, Japan"
     },
     {
-        "lat":42.4603719,
         "lng":-71.3489484,
         "setting":[
             "Concord, Massachusetts",
             "United States"
         ],
-        "id":"16902",
-        "my_rating":"3",
+        "lat":42.4603719,
+        "author":"Henry David Thoreau",
         "average_rating":"3.77",
+        "original_pub_year":"1854",
+        "author_lng":-71.3489484,
+        "my_rating":"3",
+        "id":"16902",
         "title":"Walden",
-        "original_pub_year":"1854"
+        "author_birthplace":"Concord, Massachusetts, The United States",
+        "author_lat":42.4603719
     },
     {
-        "average_rating":"4.02",
-        "id":"11297",
-        "my_rating":"2",
+        "original_pub_year":"1987",
+        "author_lng":135.7680294,
         "setting":[
 
         ],
+        "author_lat":35.0116363,
+        "my_rating":"2",
+        "id":"11297",
         "title":"Norwegian Wood",
-        "original_pub_year":"1987"
+        "author":"Haruki Murakami",
+        "average_rating":"4.02",
+        "author_birthplace":"Kyoto, Japan"
     },
     {
-        "lat":37.09024,
         "lng":-95.712891,
         "setting":[
             "United States",
             "San Francisco, California",
             "United States"
         ],
-        "id":"7763",
-        "my_rating":"3",
+        "lat":37.09024,
+        "author":"Amy Tan",
         "average_rating":"3.86",
+        "original_pub_year":"1989",
+        "author_lng":-122.2711137,
+        "my_rating":"3",
+        "id":"7763",
         "title":"The Joy Luck Club",
-        "original_pub_year":"1989"
+        "author_birthplace":"Oakland, California, The United States",
+        "author_lat":37.8043637
     },
     {
-        "average_rating":"4.18",
-        "id":"133547",
-        "my_rating":"5",
+        "original_pub_year":"1993",
         "setting":[
 
         ],
+        "author_birthplace":"",
+        "my_rating":"5",
+        "id":"133547",
         "title":"Everyone Poops",
-        "original_pub_year":"1993"
+        "average_rating":"4.18",
+        "author":"Tar\\xc5\\x8d Gomi"
     },
     {
-        "lat":25.0640996,
         "lng":121.4721415,
         "setting":[
             "District 12, Panem",
@@ -408,59 +535,80 @@
             "Panem",
             "United States"
         ],
-        "id":"2767052",
-        "my_rating":"1",
+        "lat":25.0640996,
+        "author":"Suzanne Collins",
         "average_rating":"4.40",
+        "original_pub_year":"9780439023481",
+        "author_lng":-72.6850932,
+        "my_rating":"1",
+        "id":"2767052",
         "title":"The Hunger Games (The Hunger Games, #1)",
-        "original_pub_year":"2008"
+        "author_birthplace":"Hartford, Connecticut, The United States",
+        "author_lat":41.76371109999999
     },
     {
-        "lat":55.378051,
         "lng":-3.435973,
         "setting":[
             "United Kingdom"
         ],
-        "id":"6867",
-        "my_rating":"4",
+        "lat":55.378051,
+        "author":"Ian McEwan",
         "average_rating":"3.83",
+        "original_pub_year":"2001",
+        "author_lng":-0.7557509,
+        "my_rating":"4",
+        "id":"6867",
         "title":"Atonement",
-        "original_pub_year":"2001"
+        "author_birthplace":"Aldershot, England, The United Kingdom",
+        "author_lat":51.248366
     },
     {
-        "average_rating":"3.98",
-        "id":"18386",
-        "my_rating":"4",
+        "original_pub_year":"1884",
+        "author_lng":37.5266883,
         "setting":[
 
         ],
+        "author_lat":54.07027799999999,
+        "my_rating":"4",
+        "id":"18386",
         "title":"The Death of Ivan Ilych",
-        "original_pub_year":"1884"
+        "author":"Leo Tolstoy",
+        "average_rating":"3.98",
+        "author_birthplace":"Yasnaya Polyana, Tula, Russian Federation"
     },
     {
-        "lat":-8.783195,
         "lng":34.508523,
         "setting":[
             "Africa",
             "Belgian Congo"
         ],
-        "id":"4900",
-        "my_rating":"5",
+        "lat":-8.783195,
+        "author":"Joseph Conrad",
         "average_rating":"3.38",
+        "original_pub_year":"1899",
+        "author_lng":28.566667,
+        "my_rating":"5",
+        "id":"4900",
         "title":"Heart of Darkness",
-        "original_pub_year":"1899"
+        "author_birthplace":"Berdichev (formerly Poland), Ukraine",
+        "author_lat":49.9
     },
     {
-        "average_rating":"4.42",
-        "id":"11841",
-        "my_rating":"5",
+        "original_pub_year":"1979",
+        "author_lng":-74.0059413,
         "setting":[
 
         ],
+        "author_lat":40.7127837,
+        "my_rating":"5",
+        "id":"11841",
         "title":"The Time Trilogy (A Wrinkle in Time Quintet, #1-3)",
-        "original_pub_year":"1979"
+        "author":"Madeleine L'Engle",
+        "average_rating":"4.42",
+        "author_birthplace":"New York, The United States"
     },
     {
-        "lat":34.533333,
+        "original_pub_year":"2002",
         "lng":69.166667,
         "setting":[
             "Kabul",
@@ -469,170 +617,223 @@
             "Peshawar",
             "Afghanistan"
         ],
-        "id":"77203",
+        "author_birthplace":"",
         "my_rating":"0",
-        "average_rating":"4.21",
+        "id":"77203",
         "title":"The Kite Runner",
-        "original_pub_year":"2002"
+        "lat":34.533333,
+        "average_rating":"4.21",
+        "author":"Khaled Hosseini"
     },
     {
-        "lat":39.0997265,
         "lng":-94.5785667,
         "setting":[
             "Kansas City, Missouri",
             "Lycurgus, New York",
             "United States"
         ],
-        "id":"331319",
-        "my_rating":"3",
+        "lat":39.0997265,
+        "author":"Theodore Dreiser",
         "average_rating":"3.90",
+        "original_pub_year":"1925",
+        "author_lng":-87.41390919999999,
+        "my_rating":"3",
+        "id":"331319",
         "title":"An American Tragedy",
-        "original_pub_year":"1925"
+        "author_birthplace":"Terre Haute, Indiana, The United States",
+        "author_lat":39.4667034
     },
     {
-        "average_rating":"4.14",
+        "original_pub_year":"1943",
+        "author_lng":-5.928702899999999,
+        "setting":[
+
+        ],
+        "author_lat":54.6021003,
+        "my_rating":"4",
         "id":"30633",
-        "my_rating":"4",
-        "setting":[
-
-        ],
         "title":"The Four Loves",
-        "original_pub_year":"1943"
+        "author":"CS Lewis",
+        "average_rating":"4.14",
+        "author_birthplace":"Belfast, Ireland"
     },
     {
-        "average_rating":"4.11",
-        "id":"26435",
-        "my_rating":"5",
+        "original_pub_year":"1940",
+        "author_lng":-5.928702899999999,
         "setting":[
 
         ],
+        "author_lat":54.6021003,
+        "my_rating":"5",
+        "id":"26435",
         "title":"The Problem of Pain",
-        "original_pub_year":"1940"
+        "author":"CS Lewis",
+        "average_rating":"4.11",
+        "author_birthplace":"Belfast, Ireland"
     },
     {
-        "average_rating":"3.91",
-        "id":"25350",
-        "my_rating":"4",
+        "original_pub_year":"1938",
+        "author_lng":-5.928702899999999,
         "setting":[
             "Malacandra",
             "Mars"
         ],
-        "title":"Out of the Silent Planet (Space Trilogy, #1)",
-        "original_pub_year":"1938"
-    },
-    {
-        "average_rating":"4.27",
-        "id":"17267",
+        "author_lat":54.6021003,
         "my_rating":"4",
+        "id":"25350",
+        "title":"Out of the Silent Planet (Space Trilogy, #1)",
+        "author":"CS Lewis",
+        "average_rating":"3.91",
+        "author_birthplace":"Belfast, Ireland"
+    },
+    {
+        "original_pub_year":"1945",
+        "author_lng":-5.928702899999999,
         "setting":[
 
         ],
+        "author_lat":54.6021003,
+        "my_rating":"4",
+        "id":"17267",
         "title":"The Great Divorce",
-        "original_pub_year":"1945"
+        "author":"CS Lewis",
+        "average_rating":"4.27",
+        "author_birthplace":"Belfast, Ireland"
     },
     {
-        "average_rating":"4.23",
-        "id":"112760",
-        "my_rating":"5",
+        "original_pub_year":"1925",
+        "author_lng":-0.1769,
         "setting":[
 
         ],
+        "author_lat":51.4912,
+        "my_rating":"5",
+        "id":"112760",
         "title":"The Everlasting Man",
-        "original_pub_year":"1925"
+        "author":"GK Chesterton",
+        "average_rating":"4.23",
+        "author_birthplace":"Kensington, London, The United Kingdom"
     },
     {
-        "lat":55.378051,
         "lng":-3.435973,
         "setting":[
             "United Kingdom",
             "London, England",
             "United Kingdom"
         ],
-        "id":"184419",
-        "my_rating":"3",
+        "lat":55.378051,
+        "author":"GK Chesterton",
         "average_rating":"3.86",
+        "original_pub_year":"1908",
+        "author_lng":-0.1769,
+        "my_rating":"3",
+        "id":"184419",
         "title":"The Man Who Was Thursday",
-        "original_pub_year":"1908"
+        "author_birthplace":"Kensington, London, The United Kingdom",
+        "author_lat":51.4912
     },
     {
-        "lat":52.3702157,
         "lng":4.895167900000001,
         "setting":[
             "Amsterdam",
             "Netherlands"
         ],
-        "id":"48855",
-        "my_rating":"5",
+        "lat":52.3702157,
+        "author":"Anne Frank",
         "average_rating":"4.06",
+        "original_pub_year":"1947",
+        "author_lng":8.6821267,
+        "my_rating":"5",
+        "id":"48855",
         "title":"The Diary of a Young Girl",
-        "original_pub_year":"1947"
+        "author_birthplace":"Frankfurt am Main, Germany",
+        "author_lat":50.1109221
     },
     {
-        "lat":46.227638,
         "lng":2.213749,
         "setting":[
             "France",
             "Paris",
             "France"
         ],
-        "id":"24280",
-        "my_rating":"4",
+        "lat":46.227638,
+        "author":"Victor Hugo",
         "average_rating":"4.09",
+        "original_pub_year":"1862",
+        "author_lng":6.024053899999999,
+        "my_rating":"4",
+        "id":"24280",
         "title":"Les Mis\\xc3\\xa9rables",
-        "original_pub_year":"1862"
+        "author_birthplace":"Besancon, France",
+        "author_lat":47.237829
     },
     {
-        "lat":56.49067119999999,
         "lng":-4.2026458,
         "setting":[
             "Scotland",
             "England",
             "United Kingdom"
         ],
-        "id":"8852",
-        "my_rating":"4",
+        "lat":56.49067119999999,
+        "author":"William Shakespeare",
         "average_rating":"3.86",
+        "original_pub_year":"1606",
+        "author_lng":-1.708298,
+        "my_rating":"4",
+        "id":"8852",
         "title":"Macbeth",
-        "original_pub_year":"1606"
+        "author_birthplace":"Stratford-upon-Avon, Warwickshire, England, The United Kingdom",
+        "author_lat":52.19173
     },
     {
-        "lat":51.5073509,
         "lng":-0.1277583,
         "setting":[
             "London, England",
             "New Mexico",
             "United Kingdom"
         ],
-        "id":"5129",
-        "my_rating":"0",
+        "lat":51.5073509,
+        "author":"Aldous Huxley",
         "average_rating":"3.93",
+        "original_pub_year":"1932",
+        "author_lng":-0.612808,
+        "my_rating":"0",
+        "id":"5129",
         "title":"Brave New World",
-        "original_pub_year":"1932"
+        "author_birthplace":"Godalming, Surrey, England, The United Kingdom",
+        "author_lat":51.18573199999999
     },
     {
-        "lat":56.26392,
         "lng":9.501785,
         "setting":[
             "Denmark"
         ],
-        "id":"1420",
-        "my_rating":"5",
+        "lat":56.26392,
+        "author":"William Shakespeare",
         "average_rating":"3.98",
+        "original_pub_year":"1603",
+        "author_lng":-1.708298,
+        "my_rating":"5",
+        "id":"1420",
         "title":"Hamlet",
-        "original_pub_year":"1603"
+        "author_birthplace":"Stratford-upon-Avon, Warwickshire, England, The United Kingdom",
+        "author_lat":52.19173
     },
     {
-        "average_rating":"4.02",
-        "id":"5297",
-        "my_rating":"5",
+        "original_pub_year":"1890",
+        "author_lng":-6.2603097,
         "setting":[
 
         ],
+        "author_lat":53.3498053,
+        "my_rating":"5",
+        "id":"5297",
         "title":"The Picture of Dorian Gray",
-        "original_pub_year":"1890"
+        "author":"Oscar Wilde",
+        "average_rating":"4.02",
+        "author_birthplace":"Dublin, Ireland"
     },
     {
-        "lat":51.0587013,
         "lng":-2.9499066,
         "setting":[
             "Somersetshire, England",
@@ -640,135 +841,179 @@
             "Bath, Somerset, England",
             "United Kingdom"
         ],
-        "id":"2156",
-        "my_rating":"2",
+        "lat":51.0587013,
+        "author":"Jane Austen",
         "average_rating":"4.12",
+        "original_pub_year":"1817",
+        "author_lng":-1.216844,
+        "my_rating":"2",
+        "id":"2156",
         "title":"Persuasion",
-        "original_pub_year":"1817"
+        "author_birthplace":"Hampshire, The United Kingdom",
+        "author_lat":51.0895203
     },
     {
-        "average_rating":"3.99",
-        "id":"81779",
-        "my_rating":"0",
+        "original_pub_year":"385",
+        "author_lng":23.7293599,
         "setting":[
 
         ],
+        "author_lat":37.983917,
+        "my_rating":"0",
+        "id":"81779",
         "title":"The Symposium",
-        "original_pub_year":"385"
+        "author":"Plato",
+        "average_rating":"3.99",
+        "author_birthplace":"Athens, Greece"
     },
     {
-        "lat":45.4408474,
         "lng":12.3155151,
         "setting":[
             "Venice",
             "Cyprus",
             "Italy"
         ],
-        "id":"12996",
-        "my_rating":"0",
+        "lat":45.4408474,
+        "author":"William Shakespeare",
         "average_rating":"3.86",
+        "original_pub_year":"1603",
+        "author_lng":-1.708298,
+        "my_rating":"0",
+        "id":"12996",
         "title":"Othello",
-        "original_pub_year":"1603"
+        "author_birthplace":"Stratford-upon-Avon, Warwickshire, England, The United Kingdom",
+        "author_lat":52.19173
     },
     {
-        "average_rating":"3.70",
-        "id":"2623",
-        "my_rating":"0",
+        "original_pub_year":"1861",
+        "author_lng":-1.083333,
         "setting":[
 
         ],
+        "author_lat":50.816667,
+        "my_rating":"0",
+        "id":"2623",
         "title":"Great Expectations",
-        "original_pub_year":"1861"
+        "author":"Charles Dickens",
+        "average_rating":"3.70",
+        "author_birthplace":"Portsmouth, The United Kingdom"
     },
     {
-        "lat":48.856614,
         "lng":2.3522219,
         "setting":[
             "Paris",
             "Marseille",
             "France"
         ],
-        "id":"7126",
-        "my_rating":"0",
+        "lat":48.856614,
+        "author":"Alexandre Dumas",
         "average_rating":"4.15",
+        "original_pub_year":"1844",
+        "author_lng":3.0908159,
+        "my_rating":"0",
+        "id":"7126",
         "title":"The Count of Monte Cristo",
-        "original_pub_year":"1844"
+        "author_birthplace":"Villers-Cotterets, Aisne, Paris, France",
+        "author_lat":49.255061
     },
     {
-        "average_rating":"3.68",
-        "id":"1381",
-        "my_rating":"5",
+        "original_pub_year":"800",
+        "author_lng":21.824312,
         "setting":[
 
         ],
+        "author_lat":39.074208,
+        "my_rating":"5",
+        "id":"1381",
         "title":"The Odyssey",
-        "original_pub_year":"800"
+        "author":"Homer",
+        "average_rating":"3.68",
+        "author_birthplace":"Greece"
     },
     {
-        "lat":61.52401,
         "lng":105.318756,
         "setting":[
             "Russia"
         ],
-        "id":"656",
-        "my_rating":"0",
+        "lat":61.52401,
+        "author":"Leo Tolstoy",
         "average_rating":"4.08",
+        "original_pub_year":"1869",
+        "author_lng":37.5266883,
+        "my_rating":"0",
+        "id":"656",
         "title":"War and Peace",
-        "original_pub_year":"1869"
+        "author_birthplace":"Yasnaya Polyana, Tula, Russian Federation",
+        "author_lat":54.07027799999999
     },
     {
-        "lat":48.856614,
         "lng":2.3522219,
         "setting":[
             "Paris",
             "London, England",
             "France"
         ],
-        "id":"1953",
-        "my_rating":"4",
+        "lat":48.856614,
+        "author":"Charles Dickens",
         "average_rating":"3.76",
+        "original_pub_year":"1859",
+        "author_lng":-1.083333,
+        "my_rating":"4",
+        "id":"1953",
         "title":"A Tale of Two Cities",
-        "original_pub_year":"1859"
+        "author_birthplace":"Portsmouth, The United Kingdom",
+        "author_lat":50.816667
     },
     {
-        "lat":51.2622513,
         "lng":-0.4672517,
         "setting":[
             "Surrey, England",
             "United Kingdom"
         ],
-        "id":"6969",
-        "my_rating":"0",
+        "lat":51.2622513,
+        "author":"Jane Austen",
         "average_rating":"3.97",
+        "original_pub_year":"1815",
+        "author_lng":-1.216844,
+        "my_rating":"0",
+        "id":"6969",
         "title":"Emma",
-        "original_pub_year":"1815"
+        "author_birthplace":"Hampshire, The United Kingdom",
+        "author_lat":51.0895203
     },
     {
-        "lat":32.3078,
         "lng":-64.7505,
         "setting":[
             "Bermuda"
         ],
-        "id":"12985",
-        "my_rating":"3",
+        "lat":32.3078,
+        "author":"William Shakespeare",
         "average_rating":"3.79",
+        "original_pub_year":"1611",
+        "author_lng":-1.708298,
+        "my_rating":"3",
+        "id":"12985",
         "title":"The Tempest",
-        "original_pub_year":"1611"
+        "author_birthplace":"Stratford-upon-Avon, Warwickshire, England, The United Kingdom",
+        "author_lat":52.19173
     },
     {
-        "lat":40.46366700000001,
         "lng":-3.74922,
         "setting":[
             "Spain"
         ],
-        "id":"46170",
-        "my_rating":"0",
+        "lat":40.46366700000001,
+        "author":"Ernest Hemingway",
         "average_rating":"3.93",
+        "original_pub_year":"1940",
+        "author_lng":-87.7845025,
+        "my_rating":"0",
+        "id":"46170",
         "title":"For Whom the Bell Tolls",
-        "original_pub_year":"1940"
+        "author_birthplace":"Oak Park, Illinois, The United States",
+        "author_lat":41.8850317
     },
     {
-        "lat":27.773056,
         "lng":-82.64,
         "setting":[
             "St. Petersburg",
@@ -776,63 +1021,83 @@
             "Siberia",
             "Russian Federation"
         ],
-        "id":"7144",
-        "my_rating":"0",
+        "lat":27.773056,
+        "author":"Fyodor Dostoyevsky",
         "average_rating":"4.15",
+        "original_pub_year":"1866",
+        "author_lng":37.6173,
+        "my_rating":"0",
+        "id":"7144",
         "title":"Crime and Punishment",
-        "original_pub_year":"1866"
+        "author_birthplace":"Moscow, Russian Federation",
+        "author_lat":55.755826
     },
     {
-        "lat":51.0504088,
         "lng":13.7372621,
         "setting":[
             "Dresden",
             "Germany"
         ],
-        "id":"4981",
-        "my_rating":"0",
+        "lat":51.0504088,
+        "author":"Kurt Vonnegut",
         "average_rating":"4.01",
+        "original_pub_year":"1969",
+        "author_lng":-86.158068,
+        "my_rating":"0",
+        "id":"4981",
         "title":"Slaughterhouse-Five",
-        "original_pub_year":"1969"
+        "author_birthplace":"Indianapolis, Indiana, The United States",
+        "author_lat":39.768403
     },
     {
-        "lat":37.6810422,
         "lng":-122.1244088,
         "setting":[
             "San Lorenzo",
             "Ilium"
         ],
-        "id":"135479",
-        "my_rating":"0",
+        "lat":37.6810422,
+        "author":"Kurt Vonnegut",
         "average_rating":"4.18",
-        "title":"Cats Cradle",
-        "original_pub_year":"1963"
+        "original_pub_year":"1963",
+        "author_lng":-86.158068,
+        "my_rating":"0",
+        "id":"135479",
+        "title":"Cat\\'s Cradle",
+        "author_birthplace":"Indianapolis, Indiana, The United States",
+        "author_lat":39.768403
     },
     {
-        "lat":42.58044640000001,
         "lng":10.0751331,
         "setting":[
             "Pianosa",
             "Italy"
         ],
-        "id":"168668",
-        "my_rating":"0",
+        "lat":42.58044640000001,
+        "author":"Joseph Heller",
         "average_rating":"3.96",
+        "original_pub_year":"1961",
+        "author_lng":-73.9441579,
+        "my_rating":"0",
+        "id":"168668",
         "title":"Catch-22 (Catch-22, #1)",
-        "original_pub_year":"1955"
+        "author_birthplace":"Brooklyn, New York, The United States",
+        "author_lat":40.6781784
     },
     {
-        "average_rating":"3.79",
-        "id":"7613",
-        "my_rating":"3",
+        "original_pub_year":"1945",
+        "author_lng":84.91666699999999,
         "setting":[
 
         ],
+        "author_lat":26.65,
+        "my_rating":"3",
+        "id":"7613",
         "title":"Animal Farm",
-        "original_pub_year":"1945"
+        "author":"George Orwell",
+        "average_rating":"3.79",
+        "author_birthplace":"Motihari, Bihar, India"
     },
     {
-        "lat":38.4444342,
         "lng":-90.3892008,
         "setting":[
             "St. Petersburg, Missouri",
@@ -841,14 +1106,18 @@
             "Mississippi River",
             "United States"
         ],
-        "id":"2956",
-        "my_rating":"3",
+        "lat":38.4444342,
+        "author":"Mark Twain",
         "average_rating":"3.78",
+        "original_pub_year":"1884",
+        "author_lng":-91.78710679999999,
+        "my_rating":"3",
+        "id":"2956",
         "title":"The Adventures of Huckleberry Finn",
-        "original_pub_year":"1884"
+        "author_birthplace":"Florida, Missouri, The United States",
+        "author_lat":39.4930958
     },
     {
-        "lat":38.9108325,
         "lng":-75.52766989999999,
         "setting":[
             "Delaware",
@@ -856,38 +1125,50 @@
             "Kentucky",
             "United States"
         ],
-        "id":"6149",
-        "my_rating":"0",
+        "lat":38.9108325,
+        "author":"Toni Morrison",
         "average_rating":"3.71",
+        "original_pub_year":"1987",
+        "author_lng":-82.1823746,
+        "my_rating":"0",
+        "id":"6149",
         "title":"Beloved",
-        "original_pub_year":"1987"
+        "author_birthplace":"Lorain, Ohio, The United States",
+        "author_lat":41.452819
     },
     {
-        "average_rating":"3.60",
-        "id":"7624",
-        "my_rating":"4",
+        "original_pub_year":"1954",
+        "author_lng":-5.045908,
         "setting":[
 
         ],
+        "author_lat":50.417808,
+        "my_rating":"4",
+        "id":"7624",
         "title":"Lord of the Flies",
-        "original_pub_year":"1954"
+        "author":"William Golding",
+        "average_rating":"3.60",
+        "author_birthplace":"St. Columb Minor, England, The United Kingdom"
     },
     {
-        "lat":36.2056814,
         "lng":-121.127021,
         "setting":[
             "Salinas Valley, California",
             "California",
             "United States"
         ],
-        "id":"890",
-        "my_rating":"3",
+        "lat":36.2056814,
+        "author":"John Steinbeck",
         "average_rating":"3.79",
+        "original_pub_year":"1937",
+        "author_lng":-121.127021,
+        "my_rating":"3",
+        "id":"890",
         "title":"Of Mice and Men",
-        "original_pub_year":"1937"
+        "author_birthplace":"Salinas Valley, California, The United States",
+        "author_lat":36.2056814
     },
     {
-        "lat":55.378051,
         "lng":-3.435973,
         "setting":[
             "United Kingdom",
@@ -895,77 +1176,99 @@
             "Sussex, England",
             "United Kingdom"
         ],
-        "id":"14935",
-        "my_rating":"0",
+        "lat":55.378051,
+        "author":"Jane Austen",
         "average_rating":"4.04",
+        "original_pub_year":"1811",
+        "author_lng":-1.216844,
+        "my_rating":"0",
+        "id":"14935",
         "title":"Sense and Sensibility",
-        "original_pub_year":"1811"
+        "author_birthplace":"Hampshire, The United Kingdom",
+        "author_lat":51.0895203
     },
     {
-        "lat":54.3046023,
         "lng":-2.1925436,
         "setting":[
             "Yorkshire Dales, England",
             "United Kingdom"
         ],
-        "id":"6185",
-        "my_rating":"0",
+        "lat":54.3046023,
+        "author":"Emily Bront\\xc3\\xab",
         "average_rating":"3.79",
+        "original_pub_year":"1847",
+        "author_lng":-1.848581,
+        "my_rating":"0",
+        "id":"6185",
         "title":"Wuthering Heights",
-        "original_pub_year":"1847"
+        "author_birthplace":"Thornton, Yorkshire, England, The United Kingdom",
+        "author_lat":53.79166499999999
     },
     {
-        "lat":36.778261,
         "lng":-119.4179324,
         "setting":[
             "California",
             "United States"
         ],
-        "id":"4406",
-        "my_rating":"0",
+        "lat":36.778261,
+        "author":"John Steinbeck",
         "average_rating":"4.31",
+        "original_pub_year":"1952",
+        "author_lng":-121.127021,
+        "my_rating":"0",
+        "id":"4406",
         "title":"East of Eden",
-        "original_pub_year":"1952"
+        "author_birthplace":"Salinas Valley, California, The United States",
+        "author_lat":36.2056814
     },
     {
-        "lat":38.4444342,
         "lng":-90.3892008,
         "setting":[
             "St. Petersburg, Missouri",
             "Missouri",
             "United States"
         ],
-        "id":"24583",
-        "my_rating":"4",
+        "lat":38.4444342,
+        "author":"Mark Twain",
         "average_rating":"3.86",
+        "original_pub_year":"1876",
+        "author_lng":-91.78710679999999,
+        "my_rating":"4",
+        "id":"24583",
         "title":"The Adventures of Tom Sawyer",
-        "original_pub_year":"1876"
+        "author_birthplace":"Florida, Missouri, The United States",
+        "author_lat":39.4930958
     },
     {
-        "lat":51.35763499999999,
+        "original_pub_year":"1872",
         "lng":-2.1992439,
         "setting":[
             "Midlands, England",
             "United Kingdom"
         ],
-        "id":"19089",
+        "author_birthplace":"South Farm, Arbury Hall, Nuneaton, Warwickshire, The United Kingdom",
         "my_rating":"0",
-        "average_rating":"3.89",
+        "id":"19089",
         "title":"Middlemarch",
-        "original_pub_year":"1872"
+        "lat":51.35763499999999,
+        "average_rating":"3.89",
+        "author":"George Eliot"
     },
     {
-        "average_rating":"3.85",
-        "id":"10975",
-        "my_rating":"0",
+        "original_pub_year":"1929",
+        "author_lng":-89.0078418,
         "setting":[
 
         ],
+        "author_lat":34.4942683,
+        "my_rating":"0",
+        "id":"10975",
         "title":"The Sound and the Fury",
-        "original_pub_year":"1929"
+        "author":"William Faulkner",
+        "average_rating":"3.85",
+        "author_birthplace":"New Albany, Mississippi, The United States"
     },
     {
-        "lat":48.856614,
         "lng":2.3522219,
         "setting":[
             "Paris",
@@ -974,39 +1277,51 @@
             "Spain",
             "France"
         ],
-        "id":"3876",
-        "my_rating":"0",
+        "lat":48.856614,
+        "author":"Ernest Hemingway",
         "average_rating":"3.82",
+        "original_pub_year":"1926",
+        "author_lng":-87.7845025,
+        "my_rating":"0",
+        "id":"3876",
         "title":"The Sun Also Rises",
-        "original_pub_year":"1926"
+        "author_birthplace":"Oak Park, Illinois, The United States",
+        "author_lat":41.8850317
     },
     {
-        "lat":29.95106579999999,
         "lng":-90.0715323,
         "setting":[
             "New Orleans, Louisiana",
             "United States"
         ],
-        "id":"12220",
-        "my_rating":"0",
+        "lat":29.95106579999999,
+        "author":"Tennessee Williams",
         "average_rating":"3.96",
+        "original_pub_year":"1947",
+        "author_lng":-88.4272627,
+        "my_rating":"0",
+        "id":"12220",
         "title":"A Streetcar Named Desire",
-        "original_pub_year":"1947"
+        "author_birthplace":"Columbus, Mississippi, The United States",
+        "author_lat":33.4956744
     },
     {
-        "lat":55.378051,
         "lng":-3.435973,
         "setting":[
             "United Kingdom"
         ],
-        "id":"10210",
-        "my_rating":"0",
+        "lat":55.378051,
+        "author":"Charlotte Bront\\xc3\\xab",
         "average_rating":"4.07",
+        "original_pub_year":"1847",
+        "author_lng":-1.848581,
+        "my_rating":"0",
+        "id":"10210",
         "title":"Jane Eyre",
-        "original_pub_year":"1847"
+        "author_birthplace":"Thornton, Yorkshire, England, The United Kingdom",
+        "author_lat":53.79166499999999
     },
     {
-        "lat":40.7891424,
         "lng":-73.13496049999999,
         "setting":[
             "Long Island, New York",
@@ -1014,74 +1329,103 @@
             "New York",
             "United States"
         ],
-        "id":"4671",
-        "my_rating":"4",
+        "lat":40.7891424,
+        "author":"F Scott Fitzgerald",
         "average_rating":"3.84",
+        "original_pub_year":"1925",
+        "author_lng":-93.0899578,
+        "my_rating":"4",
+        "id":"4671",
         "title":"The Great Gatsby",
-        "original_pub_year":"1925"
+        "author_birthplace":"St. Paul, Minnesota, The United States",
+        "author_lat":44.9537029
     },
     {
-        "average_rating":"4.23",
-        "id":"1885",
-        "my_rating":"4",
+        "original_pub_year":"1813",
+        "author_lng":-1.216844,
         "setting":[
 
         ],
+        "author_lat":51.0895203,
+        "my_rating":"4",
+        "id":"1885",
         "title":"Pride and Prejudice",
-        "original_pub_year":"1813"
+        "author":"Jane Austen",
+        "average_rating":"4.23",
+        "author_birthplace":"Hampshire, The United Kingdom"
     },
     {
-        "lat":31.5261528,
         "lng":-87.3347472,
         "setting":[
             "Maycomb, Alabama",
             "Alabama",
             "United States"
         ],
-        "id":"2657",
-        "my_rating":"4",
+        "lat":31.5261528,
+        "author":"Harper Lee",
         "average_rating":"4.23",
+        "original_pub_year":"1960",
+        "author_lng":-87.32470769999999,
+        "my_rating":"4",
+        "id":"2657",
         "title":"To Kill a Mockingbird",
-        "original_pub_year":"1960"
+        "author_birthplace":"Monroeville, Alabama, The United States",
+        "author_lat":31.5279399
     },
     {
-        "average_rating":"4.12",
+        "original_pub_year":"1955",
+        "author_lng":-5.928702899999999,
+        "setting":[
+
+        ],
+        "author_lat":54.6021003,
+        "my_rating":"3",
         "id":"121732",
-        "my_rating":"3",
-        "setting":[
-
-        ],
         "title":"Surprised by Joy: The Shape of My Early Life",
-        "original_pub_year":"1955"
+        "author":"CS Lewis",
+        "average_rating":"4.12",
+        "author_birthplace":"Belfast, Ireland"
     },
     {
-        "average_rating":"4.24",
+        "original_pub_year":"1961",
+        "author_lng":-5.928702899999999,
+        "setting":[
+
+        ],
+        "author_lat":54.6021003,
+        "my_rating":"4",
         "id":"49221",
-        "my_rating":"4",
-        "setting":[
-
-        ],
         "title":"A Grief Observed",
-        "original_pub_year":"1961"
+        "author":"CS Lewis",
+        "average_rating":"4.24",
+        "author_birthplace":"Belfast, Ireland"
     },
     {
-        "average_rating":"4.18",
-        "id":"11149",
+        "original_pub_year":"1942",
+        "author_lng":-5.928702899999999,
+        "setting":[
+
+        ],
+        "author_lat":54.6021003,
         "my_rating":"3",
-        "setting":[
-
-        ],
+        "id":"11149",
         "title":"The Screwtape Letters",
-        "original_pub_year":"1942"
+        "author":"CS Lewis",
+        "average_rating":"4.18",
+        "author_birthplace":"Belfast, Ireland"
     },
     {
-        "average_rating":"4.28",
-        "id":"11138",
-        "my_rating":"4",
+        "original_pub_year":"1952",
+        "author_lng":-5.928702899999999,
         "setting":[
 
         ],
+        "author_lat":54.6021003,
+        "my_rating":"4",
+        "id":"11138",
         "title":"Mere Christianity",
-        "original_pub_year":"1952"
+        "author":"CS Lewis",
+        "average_rating":"4.28",
+        "author_birthplace":"Belfast, Ireland"
     }
 ]

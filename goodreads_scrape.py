@@ -15,7 +15,6 @@ def get_original_publication_year(book_id):
     i = 0
     for item in list:
         if len(item) > 2:
-            print(list[i])
             return list[i]
             break
         i+=1
@@ -47,7 +46,6 @@ def get_setting(book_id):
                 something = something.replace(letter,"")
         place.append(something)
 
-    print(place)
     return place
 
 
