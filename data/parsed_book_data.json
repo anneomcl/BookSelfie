@@ -1,199 +1,216 @@
 [
     {
-        "my_rating":"0",
-        "average_rating":"3.98",
+        "lat":36.778261,
+        "lng":-119.4179324,
         "setting":[
             "California",
             "Monterey",
             "United States"
         ],
-        "title":"Cannery Row",
         "id":"4799",
+        "my_rating":"0",
+        "average_rating":"3.98",
+        "title":"Cannery Row",
         "original_pub_year":"1945"
     },
     {
-        "my_rating":"0",
         "average_rating":"4.07",
+        "id":"631932",
+        "my_rating":"0",
         "setting":[
 
         ],
         "title":"The Greedy Python",
-        "id":"631932",
         "original_pub_year":"1985"
     },
     {
-        "my_rating":"5",
         "average_rating":"9",
+        "id":"12543",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"Bird by Bird: Some Instructions on Writing and Life",
-        "id":"12543",
         "original_pub_year":"1994"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.06",
+        "id":"7996",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"Redwall (Redwall, #1)",
-        "id":"7996",
         "original_pub_year":"1986"
     },
     {
-        "my_rating":"0",
         "average_rating":"3.96",
+        "id":"306150",
+        "my_rating":"0",
         "setting":[
 
         ],
         "title":"The Inferno",
-        "id":"306150",
         "original_pub_year":"1314"
     },
     {
-        "my_rating":"3",
         "average_rating":"4.44",
+        "id":"13496",
+        "my_rating":"3",
         "setting":[
             "The Lands of Ice and Fire "
         ],
         "title":"A Game of Thrones (A Song of Ice and Fire, #1)",
-        "id":"13496",
         "original_pub_year":"1996"
     },
     {
-        "my_rating":"4",
         "average_rating":"3.89",
+        "id":"119322",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"The Golden Compass (His Dark Materials, #1)",
-        "id":"119322",
         "original_pub_year":"1995"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.97",
+        "lat":43.0481221,
+        "lng":-76.14742439999999,
         "setting":[
             "Syracuse, New York",
             "United States"
         ],
-        "title":"Speak",
         "id":"439288",
+        "my_rating":"3",
+        "average_rating":"3.97",
+        "title":"Speak",
         "original_pub_year":"1999"
     },
     {
-        "my_rating":"3",
-        "average_rating":"4.03",
+        "lat":37.09024,
+        "lng":-95.712891,
         "setting":[
             "United States",
             "Providence, Rhode Island",
             "Rhode Island",
             "United States"
         ],
-        "title":"My Sisters Keeper",
         "id":"10917",
+        "my_rating":"3",
+        "average_rating":"4.03",
+        "title":"My Sisters Keeper",
         "original_pub_year":"2004"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.82",
+        "lat":51.55577390000001,
+        "lng":-1.7797176,
         "setting":[
             "Swindon, England",
             "London, England",
             "United Kingdom"
         ],
-        "title":"The Curious Incident of the Dog in the Night-Time",
         "id":"1618",
+        "my_rating":"4",
+        "average_rating":"3.82",
+        "title":"The Curious Incident of the Dog in the Night-Time",
         "original_pub_year":"2003"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.26",
+        "id":"1617",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"Night (The Night Trilogy, #1)",
-        "id":"1617",
         "original_pub_year":"1958"
     },
     {
-        "my_rating":"4",
-        "average_rating":"4.20",
+        "lat":38.3242916,
+        "lng":-76.5168989,
         "setting":[
             "Middle-earth"
         ],
-        "title":"The Hobbit",
         "id":"5907",
+        "my_rating":"4",
+        "average_rating":"4.20",
+        "title":"The Hobbit",
         "original_pub_year":"1937"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.77",
+        "lat":40.7127837,
+        "lng":-74.0059413,
         "setting":[
             "New York City, New York",
             "Agerstown, Pennsylvania",
             "United States"
         ],
-        "title":"The Catcher in the Rye",
         "id":"5107",
+        "my_rating":"4",
+        "average_rating":"3.77",
+        "title":"The Catcher in the Rye",
         "original_pub_year":"1951"
     },
     {
-        "my_rating":"3",
         "average_rating":"3.56",
+        "id":"37781",
+        "my_rating":"3",
         "setting":[
             "Umuofia",
             "Nigeria"
         ],
         "title":"Things Fall Apart (The African Trilogy, #1)",
-        "id":"37781",
         "original_pub_year":"1958"
     },
     {
-        "my_rating":"5",
-        "average_rating":"3.83",
+        "lat":35.6894875,
+        "lng":139.6917064,
         "setting":[
             "Tokyo",
             "Japan"
         ],
-        "title":"1Q84 (1Q84, #1-3)",
         "id":"10357575",
+        "my_rating":"5",
+        "average_rating":"3.83",
+        "title":"1Q84 (1Q84, #1-3)",
         "original_pub_year":"2010"
     },
     {
-        "my_rating":"3",
         "average_rating":"3.99",
+        "id":"14142",
+        "my_rating":"3",
         "setting":[
 
         ],
         "title":"The Art of Loving",
-        "id":"14142",
         "original_pub_year":"1956"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.59",
+        "lat":35.86166,
+        "lng":104.195397,
         "setting":[
             "China"
         ],
-        "title":"Balzac and the Little Chinese Seamstress",
         "id":"533465",
+        "my_rating":"3",
+        "average_rating":"3.59",
+        "title":"Balzac and the Little Chinese Seamstress",
         "original_pub_year":"2000"
     },
     {
-        "my_rating":"3",
         "average_rating":"3.44",
+        "id":"19501",
+        "my_rating":"3",
         "setting":[
 
         ],
         "title":"Eat, Pray, Love",
-        "id":"19501",
         "original_pub_year":"2000"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.29",
+        "id":"6294",
+        "my_rating":"4",
         "setting":[
             "Ingary",
             "Porthaven",
@@ -201,178 +218,189 @@
             "United Kingdom"
         ],
         "title":"Howls Moving Castle (Howls Moving Castle, #1)",
-        "id":"6294",
         "original_pub_year":"1986"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.38",
+        "lat":56.26392,
+        "lng":9.501785,
         "setting":[
             "Denmark",
             "Geatland",
             "Sweden"
         ],
-        "title":"Beowulf: A New Verse Translation",
         "id":"52357",
+        "my_rating":"3",
+        "average_rating":"3.38",
+        "title":"Beowulf: A New Verse Translation",
         "original_pub_year":"800"
     },
     {
-        "my_rating":"5",
         "average_rating":"3.60",
+        "id":"19351",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"The Epic of Gilgamesh",
-        "id":"19351",
         "original_pub_year":"1500"
     },
     {
-        "my_rating":"3",
         "average_rating":"3.60",
+        "id":"17645",
+        "my_rating":"3",
         "setting":[
 
         ],
         "title":"The Penelopiad",
-        "id":"17645",
         "original_pub_year":"2003"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.83",
+        "lat":37.09024,
+        "lng":-95.712891,
         "setting":[
             "United States"
         ],
-        "title":"Housekeeping",
         "id":"11741",
+        "my_rating":"4",
+        "average_rating":"3.83",
+        "title":"Housekeeping",
         "original_pub_year":"1980"
     },
     {
-        "my_rating":"5",
-        "average_rating":"3.80",
+        "lat":40.7127837,
+        "lng":-74.0059413,
         "setting":[
             "New York City, New York",
             "United States"
         ],
-        "title":"Invisible Man",
         "id":"16981",
+        "my_rating":"5",
+        "average_rating":"3.80",
+        "title":"Invisible Man",
         "original_pub_year":"1952"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.32",
+        "id":"4069",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"Mans Search for Meaning",
-        "id":"4069",
         "original_pub_year":"1946"
     },
     {
-        "my_rating":"1",
         "average_rating":"3.71",
+        "id":"357636",
+        "my_rating":"1",
         "setting":[
 
         ],
         "title":"Civilization and Its Discontents",
-        "id":"357636",
         "original_pub_year":"1930"
     },
     {
-        "my_rating":"5",
         "average_rating":"3.90",
+        "id":"360882",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"Phaedrus",
-        "id":"360882",
         "original_pub_year":"1956"
     },
     {
-        "my_rating":"2",
         "average_rating":"3.72",
+        "id":"629",
+        "my_rating":"2",
         "setting":[
 
         ],
         "title":"Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values",
-        "id":"629",
         "original_pub_year":"1974"
     },
     {
-        "my_rating":"4",
         "average_rating":"3.74",
+        "id":"19380",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"Candide",
-        "id":"19380",
         "original_pub_year":"1759"
     },
     {
-        "my_rating":"4",
-        "average_rating":"4.15",
+        "lat":36.204824,
+        "lng":138.252924,
         "setting":[
             "Japan"
         ],
-        "title":"Hard-Boiled Wonderland and the End of the World",
         "id":"10374",
+        "my_rating":"4",
+        "average_rating":"4.15",
+        "title":"Hard-Boiled Wonderland and the End of the World",
         "original_pub_year":"1985"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.18",
+        "id":"11275",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"The Wind-Up Bird Chronicle",
-        "id":"11275",
         "original_pub_year":"1994"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.77",
+        "lat":42.4603719,
+        "lng":-71.3489484,
         "setting":[
             "Concord, Massachusetts",
             "United States"
         ],
-        "title":"Walden",
         "id":"16902",
+        "my_rating":"3",
+        "average_rating":"3.77",
+        "title":"Walden",
         "original_pub_year":"1854"
     },
     {
-        "my_rating":"2",
         "average_rating":"4.02",
+        "id":"11297",
+        "my_rating":"2",
         "setting":[
 
         ],
         "title":"Norwegian Wood",
-        "id":"11297",
         "original_pub_year":"1987"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.86",
+        "lat":37.09024,
+        "lng":-95.712891,
         "setting":[
             "United States",
             "San Francisco, California",
             "United States"
         ],
-        "title":"The Joy Luck Club",
         "id":"7763",
+        "my_rating":"3",
+        "average_rating":"3.86",
+        "title":"The Joy Luck Club",
         "original_pub_year":"1989"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.18",
+        "id":"133547",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"Everyone Poops",
-        "id":"133547",
         "original_pub_year":"1993"
     },
     {
-        "my_rating":"1",
-        "average_rating":"4.40",
+        "lat":25.0640996,
+        "lng":121.4721415,
         "setting":[
             "District 12, Panem",
             "Capitol, Panem",
@@ -380,54 +408,60 @@
             "Panem",
             "United States"
         ],
-        "title":"The Hunger Games (The Hunger Games, #1)",
         "id":"2767052",
+        "my_rating":"1",
+        "average_rating":"4.40",
+        "title":"The Hunger Games (The Hunger Games, #1)",
         "original_pub_year":"2008"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.83",
+        "lat":55.378051,
+        "lng":-3.435973,
         "setting":[
             "United Kingdom"
         ],
-        "title":"Atonement",
         "id":"6867",
+        "my_rating":"4",
+        "average_rating":"3.83",
+        "title":"Atonement",
         "original_pub_year":"2001"
     },
     {
-        "my_rating":"4",
         "average_rating":"3.98",
+        "id":"18386",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"The Death of Ivan Ilych",
-        "id":"18386",
         "original_pub_year":"1884"
     },
     {
-        "my_rating":"5",
-        "average_rating":"3.38",
+        "lat":-8.783195,
+        "lng":34.508523,
         "setting":[
             "Africa",
             "Belgian Congo"
         ],
-        "title":"Heart of Darkness",
         "id":"4900",
+        "my_rating":"5",
+        "average_rating":"3.38",
+        "title":"Heart of Darkness",
         "original_pub_year":"1899"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.42",
+        "id":"11841",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"The Time Trilogy (A Wrinkle in Time Quintet, #1-3)",
-        "id":"11841",
         "original_pub_year":"1979"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.21",
+        "lat":34.533333,
+        "lng":69.166667,
         "setting":[
             "Kabul",
             "Fremont, California",
@@ -435,331 +469,371 @@
             "Peshawar",
             "Afghanistan"
         ],
-        "title":"The Kite Runner",
         "id":"77203",
+        "my_rating":"0",
+        "average_rating":"4.21",
+        "title":"The Kite Runner",
         "original_pub_year":"2002"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.90",
+        "lat":39.0997265,
+        "lng":-94.5785667,
         "setting":[
             "Kansas City, Missouri",
             "Lycurgus, New York",
             "United States"
         ],
-        "title":"An American Tragedy",
         "id":"331319",
+        "my_rating":"3",
+        "average_rating":"3.90",
+        "title":"An American Tragedy",
         "original_pub_year":"1925"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.14",
+        "id":"30633",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"The Four Loves",
-        "id":"30633",
         "original_pub_year":"1943"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.11",
+        "id":"26435",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"The Problem of Pain",
-        "id":"26435",
         "original_pub_year":"1940"
     },
     {
-        "my_rating":"4",
         "average_rating":"3.91",
+        "id":"25350",
+        "my_rating":"4",
         "setting":[
             "Malacandra",
             "Mars"
         ],
         "title":"Out of the Silent Planet (Space Trilogy, #1)",
-        "id":"25350",
         "original_pub_year":"1938"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.27",
+        "id":"17267",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"The Great Divorce",
-        "id":"17267",
         "original_pub_year":"1945"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.23",
+        "id":"112760",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"The Everlasting Man",
-        "id":"112760",
         "original_pub_year":"1925"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.86",
+        "lat":55.378051,
+        "lng":-3.435973,
         "setting":[
             "United Kingdom",
             "London, England",
             "United Kingdom"
         ],
-        "title":"The Man Who Was Thursday",
         "id":"184419",
+        "my_rating":"3",
+        "average_rating":"3.86",
+        "title":"The Man Who Was Thursday",
         "original_pub_year":"1908"
     },
     {
-        "my_rating":"5",
-        "average_rating":"4.06",
+        "lat":52.3702157,
+        "lng":4.895167900000001,
         "setting":[
             "Amsterdam",
             "Netherlands"
         ],
-        "title":"The Diary of a Young Girl",
         "id":"48855",
+        "my_rating":"5",
+        "average_rating":"4.06",
+        "title":"The Diary of a Young Girl",
         "original_pub_year":"1947"
     },
     {
-        "my_rating":"4",
-        "average_rating":"4.09",
+        "lat":46.227638,
+        "lng":2.213749,
         "setting":[
             "France",
             "Paris",
             "France"
         ],
-        "title":"Les Mis\\xc3\\xa9rables",
         "id":"24280",
+        "my_rating":"4",
+        "average_rating":"4.09",
+        "title":"Les Mis\\xc3\\xa9rables",
         "original_pub_year":"1862"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.86",
+        "lat":56.49067119999999,
+        "lng":-4.2026458,
         "setting":[
             "Scotland",
             "England",
             "United Kingdom"
         ],
-        "title":"Macbeth",
         "id":"8852",
+        "my_rating":"4",
+        "average_rating":"3.86",
+        "title":"Macbeth",
         "original_pub_year":"1606"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.93",
+        "lat":51.5073509,
+        "lng":-0.1277583,
         "setting":[
             "London, England",
             "New Mexico",
             "United Kingdom"
         ],
-        "title":"Brave New World",
         "id":"5129",
+        "my_rating":"0",
+        "average_rating":"3.93",
+        "title":"Brave New World",
         "original_pub_year":"1932"
     },
     {
-        "my_rating":"5",
-        "average_rating":"3.98",
+        "lat":56.26392,
+        "lng":9.501785,
         "setting":[
             "Denmark"
         ],
-        "title":"Hamlet",
         "id":"1420",
+        "my_rating":"5",
+        "average_rating":"3.98",
+        "title":"Hamlet",
         "original_pub_year":"1603"
     },
     {
-        "my_rating":"5",
         "average_rating":"4.02",
+        "id":"5297",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"The Picture of Dorian Gray",
-        "id":"5297",
         "original_pub_year":"1890"
     },
     {
-        "my_rating":"2",
-        "average_rating":"4.12",
+        "lat":51.0587013,
+        "lng":-2.9499066,
         "setting":[
             "Somersetshire, England",
             "Lyme Regis, England",
             "Bath, Somerset, England",
             "United Kingdom"
         ],
-        "title":"Persuasion",
         "id":"2156",
+        "my_rating":"2",
+        "average_rating":"4.12",
+        "title":"Persuasion",
         "original_pub_year":"1817"
     },
     {
-        "my_rating":"0",
         "average_rating":"3.99",
+        "id":"81779",
+        "my_rating":"0",
         "setting":[
 
         ],
         "title":"The Symposium",
-        "id":"81779",
         "original_pub_year":"385"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.86",
+        "lat":45.4408474,
+        "lng":12.3155151,
         "setting":[
             "Venice",
             "Cyprus",
             "Italy"
         ],
-        "title":"Othello",
         "id":"12996",
+        "my_rating":"0",
+        "average_rating":"3.86",
+        "title":"Othello",
         "original_pub_year":"1603"
     },
     {
-        "my_rating":"0",
         "average_rating":"3.70",
+        "id":"2623",
+        "my_rating":"0",
         "setting":[
 
         ],
         "title":"Great Expectations",
-        "id":"2623",
         "original_pub_year":"1861"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.15",
+        "lat":48.856614,
+        "lng":2.3522219,
         "setting":[
             "Paris",
             "Marseille",
             "France"
         ],
-        "title":"The Count of Monte Cristo",
         "id":"7126",
+        "my_rating":"0",
+        "average_rating":"4.15",
+        "title":"The Count of Monte Cristo",
         "original_pub_year":"1844"
     },
     {
-        "my_rating":"5",
         "average_rating":"3.68",
+        "id":"1381",
+        "my_rating":"5",
         "setting":[
 
         ],
         "title":"The Odyssey",
-        "id":"1381",
         "original_pub_year":"800"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.08",
+        "lat":61.52401,
+        "lng":105.318756,
         "setting":[
             "Russia"
         ],
-        "title":"War and Peace",
         "id":"656",
+        "my_rating":"0",
+        "average_rating":"4.08",
+        "title":"War and Peace",
         "original_pub_year":"1869"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.76",
+        "lat":48.856614,
+        "lng":2.3522219,
         "setting":[
             "Paris",
             "London, England",
             "France"
         ],
-        "title":"A Tale of Two Cities",
         "id":"1953",
+        "my_rating":"4",
+        "average_rating":"3.76",
+        "title":"A Tale of Two Cities",
         "original_pub_year":"1859"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.97",
+        "lat":51.2622513,
+        "lng":-0.4672517,
         "setting":[
             "Surrey, England",
             "United Kingdom"
         ],
-        "title":"Emma",
         "id":"6969",
+        "my_rating":"0",
+        "average_rating":"3.97",
+        "title":"Emma",
         "original_pub_year":"1815"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.79",
+        "lat":32.3078,
+        "lng":-64.7505,
         "setting":[
             "Bermuda"
         ],
-        "title":"The Tempest",
         "id":"12985",
+        "my_rating":"3",
+        "average_rating":"3.79",
+        "title":"The Tempest",
         "original_pub_year":"1611"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.93",
+        "lat":40.46366700000001,
+        "lng":-3.74922,
         "setting":[
             "Spain"
         ],
-        "title":"For Whom the Bell Tolls",
         "id":"46170",
+        "my_rating":"0",
+        "average_rating":"3.93",
+        "title":"For Whom the Bell Tolls",
         "original_pub_year":"1940"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.15",
+        "lat":27.773056,
+        "lng":-82.64,
         "setting":[
             "St. Petersburg",
             "Russian Empire",
             "Siberia",
             "Russian Federation"
         ],
-        "title":"Crime and Punishment",
         "id":"7144",
+        "my_rating":"0",
+        "average_rating":"4.15",
+        "title":"Crime and Punishment",
         "original_pub_year":"1866"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.01",
+        "lat":51.0504088,
+        "lng":13.7372621,
         "setting":[
             "Dresden",
             "Germany"
         ],
-        "title":"Slaughterhouse-Five",
         "id":"4981",
+        "my_rating":"0",
+        "average_rating":"4.01",
+        "title":"Slaughterhouse-Five",
         "original_pub_year":"1969"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.18",
+        "lat":37.6810422,
+        "lng":-122.1244088,
         "setting":[
             "San Lorenzo",
             "Ilium"
         ],
-        "title":"Cats Cradle",
         "id":"135479",
+        "my_rating":"0",
+        "average_rating":"4.18",
+        "title":"Cats Cradle",
         "original_pub_year":"1963"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.96",
+        "lat":42.58044640000001,
+        "lng":10.0751331,
         "setting":[
             "Pianosa",
             "Italy"
         ],
-        "title":"Catch-22 (Catch-22, #1)",
         "id":"168668",
+        "my_rating":"0",
+        "average_rating":"3.96",
+        "title":"Catch-22 (Catch-22, #1)",
         "original_pub_year":"1955"
     },
     {
-        "my_rating":"3",
         "average_rating":"3.79",
+        "id":"7613",
+        "my_rating":"3",
         "setting":[
 
         ],
         "title":"Animal Farm",
-        "id":"7613",
         "original_pub_year":"1945"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.78",
+        "lat":38.4444342,
+        "lng":-90.3892008,
         "setting":[
             "St. Petersburg, Missouri",
             "Hannibal, Missouri",
@@ -767,116 +841,132 @@
             "Mississippi River",
             "United States"
         ],
-        "title":"The Adventures of Huckleberry Finn",
         "id":"2956",
+        "my_rating":"3",
+        "average_rating":"3.78",
+        "title":"The Adventures of Huckleberry Finn",
         "original_pub_year":"1884"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.71",
+        "lat":38.9108325,
+        "lng":-75.52766989999999,
         "setting":[
             "Delaware",
             "Ohio",
             "Kentucky",
             "United States"
         ],
-        "title":"Beloved",
         "id":"6149",
+        "my_rating":"0",
+        "average_rating":"3.71",
+        "title":"Beloved",
         "original_pub_year":"1987"
     },
     {
-        "my_rating":"4",
         "average_rating":"3.60",
+        "id":"7624",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"Lord of the Flies",
-        "id":"7624",
         "original_pub_year":"1954"
     },
     {
-        "my_rating":"3",
-        "average_rating":"3.79",
+        "lat":36.2056814,
+        "lng":-121.127021,
         "setting":[
             "Salinas Valley, California",
             "California",
             "United States"
         ],
-        "title":"Of Mice and Men",
         "id":"890",
+        "my_rating":"3",
+        "average_rating":"3.79",
+        "title":"Of Mice and Men",
         "original_pub_year":"1937"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.04",
+        "lat":55.378051,
+        "lng":-3.435973,
         "setting":[
             "United Kingdom",
             "Devonshire, England",
             "Sussex, England",
             "United Kingdom"
         ],
-        "title":"Sense and Sensibility",
         "id":"14935",
+        "my_rating":"0",
+        "average_rating":"4.04",
+        "title":"Sense and Sensibility",
         "original_pub_year":"1811"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.79",
+        "lat":54.3046023,
+        "lng":-2.1925436,
         "setting":[
             "Yorkshire Dales, England",
             "United Kingdom"
         ],
-        "title":"Wuthering Heights",
         "id":"6185",
+        "my_rating":"0",
+        "average_rating":"3.79",
+        "title":"Wuthering Heights",
         "original_pub_year":"1847"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.31",
+        "lat":36.778261,
+        "lng":-119.4179324,
         "setting":[
             "California",
             "United States"
         ],
-        "title":"East of Eden",
         "id":"4406",
+        "my_rating":"0",
+        "average_rating":"4.31",
+        "title":"East of Eden",
         "original_pub_year":"1952"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.86",
+        "lat":38.4444342,
+        "lng":-90.3892008,
         "setting":[
             "St. Petersburg, Missouri",
             "Missouri",
             "United States"
         ],
-        "title":"The Adventures of Tom Sawyer",
         "id":"24583",
+        "my_rating":"4",
+        "average_rating":"3.86",
+        "title":"The Adventures of Tom Sawyer",
         "original_pub_year":"1876"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.89",
+        "lat":51.35763499999999,
+        "lng":-2.1992439,
         "setting":[
             "Midlands, England",
             "United Kingdom"
         ],
-        "title":"Middlemarch",
         "id":"19089",
+        "my_rating":"0",
+        "average_rating":"3.89",
+        "title":"Middlemarch",
         "original_pub_year":"1872"
     },
     {
-        "my_rating":"0",
         "average_rating":"3.85",
+        "id":"10975",
+        "my_rating":"0",
         "setting":[
 
         ],
         "title":"The Sound and the Fury",
-        "id":"10975",
         "original_pub_year":"1929"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.82",
+        "lat":48.856614,
+        "lng":2.3522219,
         "setting":[
             "Paris",
             "Pamplona",
@@ -884,104 +974,114 @@
             "Spain",
             "France"
         ],
-        "title":"The Sun Also Rises",
         "id":"3876",
+        "my_rating":"0",
+        "average_rating":"3.82",
+        "title":"The Sun Also Rises",
         "original_pub_year":"1926"
     },
     {
-        "my_rating":"0",
-        "average_rating":"3.96",
+        "lat":29.95106579999999,
+        "lng":-90.0715323,
         "setting":[
             "New Orleans, Louisiana",
             "United States"
         ],
-        "title":"A Streetcar Named Desire",
         "id":"12220",
+        "my_rating":"0",
+        "average_rating":"3.96",
+        "title":"A Streetcar Named Desire",
         "original_pub_year":"1947"
     },
     {
-        "my_rating":"0",
-        "average_rating":"4.07",
+        "lat":55.378051,
+        "lng":-3.435973,
         "setting":[
             "United Kingdom"
         ],
-        "title":"Jane Eyre",
         "id":"10210",
+        "my_rating":"0",
+        "average_rating":"4.07",
+        "title":"Jane Eyre",
         "original_pub_year":"1847"
     },
     {
-        "my_rating":"4",
-        "average_rating":"3.84",
+        "lat":40.7891424,
+        "lng":-73.13496049999999,
         "setting":[
             "Long Island, New York",
             "New York City, New York",
             "New York",
             "United States"
         ],
-        "title":"The Great Gatsby",
         "id":"4671",
+        "my_rating":"4",
+        "average_rating":"3.84",
+        "title":"The Great Gatsby",
         "original_pub_year":"1925"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.23",
+        "id":"1885",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"Pride and Prejudice",
-        "id":"1885",
         "original_pub_year":"1813"
     },
     {
-        "my_rating":"4",
-        "average_rating":"4.23",
+        "lat":31.5261528,
+        "lng":-87.3347472,
         "setting":[
             "Maycomb, Alabama",
             "Alabama",
             "United States"
         ],
-        "title":"To Kill a Mockingbird",
         "id":"2657",
+        "my_rating":"4",
+        "average_rating":"4.23",
+        "title":"To Kill a Mockingbird",
         "original_pub_year":"1960"
     },
     {
-        "my_rating":"3",
         "average_rating":"4.12",
+        "id":"121732",
+        "my_rating":"3",
         "setting":[
 
         ],
         "title":"Surprised by Joy: The Shape of My Early Life",
-        "id":"121732",
         "original_pub_year":"1955"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.24",
+        "id":"49221",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"A Grief Observed",
-        "id":"49221",
         "original_pub_year":"1961"
     },
     {
-        "my_rating":"3",
         "average_rating":"4.18",
+        "id":"11149",
+        "my_rating":"3",
         "setting":[
 
         ],
         "title":"The Screwtape Letters",
-        "id":"11149",
         "original_pub_year":"1942"
     },
     {
-        "my_rating":"4",
         "average_rating":"4.28",
+        "id":"11138",
+        "my_rating":"4",
         "setting":[
 
         ],
         "title":"Mere Christianity",
-        "id":"11138",
         "original_pub_year":"1952"
     }
 ]
