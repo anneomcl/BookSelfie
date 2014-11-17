@@ -6,7 +6,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- I recommend you host this file on your own, since this will change without warning -->
 <script src="datamaps/datamaps.world.min.js"></script>
-<div id="container1" style="position: relative; width: 80%; height: 600px;"></div>
+<div id="container1" style="position: relative; width: 800px; height: 600px;"></div>
 
 
 <script>
@@ -49,22 +49,37 @@
                 if(data[i]["author_lng"] && data[i]["author_lat"]) {
                     longitude[i] = data[i]["author_lng"];
                     latitude[i] = data[i]["author_lat"];
-                    console.log(latitude[i])
-                }
-
-                if(data[i]["author"])
-                {
-                    names[i] = data[i]["author"];
                 }
 
                 if(data[i]["my_rating"])
                 {
-                    size[i] = data[i]["my_rating"];
+                    if(names.indexOf(data[i]["author"]) != -1)
+                    {
+                        var dup_pos = names.indexOf(data[i]["author"]);
+                        var size_dup = size[dup_pos];
+
+                        var new_size = +size_dup +  +data[i]["my_rating"];
+                        size[dup_pos] = new_size;
+                        console.log(new_size);
+                    }
+
+                    else
+                        size[i] = data[i]["my_rating"]
                 }
 
                 else
                 {
                     size[i] = data[i]["average_rating"];
+                }
+
+                if(data[i]["author"])
+                {
+                    if(names.indexOf(data[i]["author"]) != -1)
+                        continue;
+                    else
+                    {
+                        names[i] = data[i]["author"];
+                    }
                 }
             }
 
@@ -76,7 +91,7 @@
                     if(latitude[i])
                     {
                         bubbles.push({'name' : names[i], 'latitude' : latitude[i],
-                            'longitude' : longitude[i], 'radius': size[i]*2, 'fillKey' : 'gt50'});
+                            'longitude' : longitude[i], 'radius': size[i], 'fillKey' : 'gt50'});
                     }
                 }
             }
