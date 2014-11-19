@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <style>
     .overlay {
-    fill: none;
-    pointer-events: all;
+        fill: none;
+        pointer-events: all;
     }
 </style>
 <body>
@@ -12,11 +12,12 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- I recommend you host this file on your own, since this will change without warning -->
 <script src="datamaps/datamaps.world.min.js"></script>
+
 <a href = "index.html" style = "font-size: 200%;">Home</a>
 <a href = "author_map.html" style = "font-size: 200%;">Author World Map</a>
 <a href = "author_map_USA.html" style = "font-size: 200%;">Author Map USA</a>
 <a href = "author_map_Europe.html" style = "font-size: 200%;">Author Map Europe</a>
-<div id="container1" style="position: relative; width: 800px; height: 600px;"></div>
+<div id="container1" style="position: relative; width: 1000px; height: 600px;"></div>
 
 
 <script>
@@ -25,7 +26,6 @@
         latitude = [];
         names = [];
         size = [];
-        colors = [];
         d3.json("data/parsed_book_data.json",function(error,data){
             if (error) return console.warn(error);
             for(var i = 0; i < data.length; i++)
@@ -49,6 +49,16 @@
 
                     else
                         size[i] = data[i]["my_rating"]
+
+                    if(+size[i] > 10)
+                    {
+                        size[i] = +10;
+                    }
+
+                    if(+size[i] < 3 && +size[i] > 0)
+                    {
+                        size[i] = +4;
+                    }
                 }
 
                 else
@@ -70,11 +80,22 @@
             var map = new Datamap({
                 scope: 'world',
                 element: document.getElementById('container1'),
-                projection: 'mercator',
+                setProjection: function(element) {
+                    var projection = d3.geo.equirectangular()
+                            .center([-80, 40])
+                            .rotate([10, 0])
+                            .scale(800)
+                            .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+                    var path = d3.geo.path()
+                            .projection(projection);
+
+                    return {path: path, projection: projection};
+                },
 
                 fills: {
                     defaultFill: '#f0af0a',
                     lt50: 'rgba(0,244,244,0.9)',
+                    gt50: 'red',
                     gt500: '#00FFFF',
                     gt501: '#FFFFFF',
                     gt502: '#FFFFFF',
@@ -173,7 +194,6 @@
 
             })
 
-
             bubbles = new Array();
             for(var i = 0; i < longitude.length; i++)
             {
@@ -182,7 +202,7 @@
                     if(latitude[i])
                     {
                         bubbles.push({'name' : names[i], 'latitude' : latitude[i],
-                            'longitude' : longitude[i], 'radius': size[i], 'fillKey' : 'gt50' + parseInt(i)});
+                            'longitude' : longitude[i], 'radius': size[i]*2, 'fillKey' : 'gt50' + parseInt(i)});
                     }
                 }
             }

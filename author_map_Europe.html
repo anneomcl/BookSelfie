@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <style>
     .overlay {
-    fill: none;
-    pointer-events: all;
+        fill: none;
+        pointer-events: all;
     }
 </style>
 <body>
@@ -25,7 +25,6 @@
         latitude = [];
         names = [];
         size = [];
-        colors = [];
         d3.json("data/parsed_book_data.json",function(error,data){
             if (error) return console.warn(error);
             for(var i = 0; i < data.length; i++)
@@ -49,6 +48,21 @@
 
                     else
                         size[i] = data[i]["my_rating"]
+
+                    if(+size[i] > 20)
+                    {
+                        size[i] = +20;
+                    }
+
+                    if(+size[i] < 1 && +size[i] > 0)
+                    {
+                        size[i] = +1;
+                    }
+
+                    if(+size[i] >= 5)
+                    {
+                        size[i] = 10;
+                    }
                 }
 
                 else
@@ -67,14 +81,26 @@
                 }
             }
 
+            //basic map config with custom fills, mercator projection
             var map = new Datamap({
                 scope: 'world',
                 element: document.getElementById('container1'),
-                projection: 'mercator',
+                setProjection: function(element) {
+                    var projection = d3.geo.equirectangular()
+                            .center([25, 50])
+                            .rotate([20, 0])
+                            .scale(1000)
+                            .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+                    var path = d3.geo.path()
+                            .projection(projection);
+
+                    return {path: path, projection: projection};
+                },
 
                 fills: {
                     defaultFill: '#f0af0a',
                     lt50: 'rgba(0,244,244,0.9)',
+                    gt50: 'red',
                     gt500: '#00FFFF',
                     gt501: '#FFFFFF',
                     gt502: '#FFFFFF',
@@ -172,7 +198,6 @@
 
 
             })
-
 
             bubbles = new Array();
             for(var i = 0; i < longitude.length; i++)
