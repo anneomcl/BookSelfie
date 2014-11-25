@@ -9,8 +9,7 @@
 
 <a href = "index.html" style = "font-size: 200%;">Home</a>
 <div id="container1" style="position: relative; width: 80%; height: 600px;"></div>
-
-
+<div id = "my_div" style = "width: 720px; height: 300px;"></div>
 <script>
     //basic map config with custom fills, mercator projection
     var map = new Datamap({
@@ -73,6 +72,8 @@
         latitude = [];
         names = [];
         size = [];
+        var fictional = 0;
+        var nonfictional = 0;
         d3.json("data/parsed_book_data.json",function(error,data){
             if (error) return console.warn(error);
             for(var i = 0; i < data.length; i++)
@@ -80,6 +81,11 @@
                 if(data[i]["lng"] && data[i]["lat"]) {
                     longitude[i] = data[i]["lng"];
                     latitude[i] = data[i]["lat"];
+                    fictional += 1;
+                }
+                else
+                {
+                    nonfictional+=1;
                 }
 
                 if(data[i]["title"])
@@ -111,14 +117,56 @@
                 }
             }
 
-            console.log(bubbles);
+
+            var m_div = d3.select("#my_div");
+            var m_svg = m_div.append("svg")
+                .attr("height", 1000)
+                .attr("width", 720);
+            var g = m_svg.append("g");
+            g.append("circle")
+                    .attr("cx", 300)
+                    .attr("cy", 100)
+                    .attr("r", function(d) { return 2*fictional; })
+                    .attr("style", "fill: steelblue");
+
+            g.append("circle")
+                    .attr("cx", 600)
+                    .attr("cy", 100)
+                    .attr("r", 100)
+                    .attr("r", function(d) { return 2*nonfictional; })
+                    .attr("style", "fill: red");
+            var node = m_svg.selectAll("circle")
+            node.append("svg:title")
+                    .text("Hi");
+            g.append("text")
+                    .attr("cx", 100)
+                    .attr("cy", 500)
+                    .attr("font-family", "sans-serif")
+                    .attr("font-size", "100px")
+                    .attr("fill", "green")
+                    .text("Hi");
+
+
+           /* var fictional = 20;
+            var nonfictional = 50;
+            var circle = d3.selectAll("circle");
+            var ncircle = circle[0];
+            ncircle.style("fill", "steelblue");
+            ncircle.attr("r", function(d) { return fictional; }); //put fictional/non-fictional world here
+            var fcircle = circle[1];
+            fcircle.style("fill", "red");
+            fcircle.attr("r", function(d) { return fictional; }); //put fictional/non-fictional world here*/
 
             map.bubbles(bubbles, {
                 popupTemplate: function (geo, data) {
                     return "<div class='hoverinfo'>It is " + data.name + "</div>";
                 }
             });
+
+
+
         })
     })
 </script>
+
 </body>
