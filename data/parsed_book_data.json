@@ -16,6 +16,8 @@
         "title":"Cannery Row",
         "author_birthplace":"Salinas Valley, California, The United States",
         "author_lat":36.2056814
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"1985",
@@ -27,7 +29,8 @@
         "id":"631932",
         "title":"The Greedy Python",
         "average_rating":"4.07",
-        "author":"Richard Buckley"
+        "author":"Richard Buckley",
+        "fiction":"0"
     },
     {
         "original_pub_year":"1994",
@@ -39,7 +42,8 @@
         "id":"12543",
         "title":"Bird by Bird: Some Instructions on Writing and Life",
         "average_rating":"9",
-        "author":"Richard Buckley"
+        "author":"Richard Buckley",
+        "fiction":"0"
     },
     {
         "original_pub_year":"1986",
@@ -53,7 +57,8 @@
         "title":"Redwall (Redwall, #1)",
         "author":"Brian Jacques",
         "average_rating":"4.06",
-        "author_birthplace":"Liverpool, The United Kingdom"
+        "author_birthplace":"Liverpool, The United Kingdom",
+        "fiction":"1"
     },
     {
         "original_pub_year":"1314",
@@ -67,7 +72,8 @@
         "title":"The Inferno",
         "author":"Dante Alighieri",
         "average_rating":"3.96",
-        "author_birthplace":"Florence, Italy"
+        "author_birthplace":"Florence, Italy",
+        "fiction":"1"
     },
     {
         "original_pub_year":"1996",
@@ -82,6 +88,8 @@
         "author":"George RR Martin",
         "average_rating":"4.44",
         "author_birthplace":"Bayonne, New Jersey, The United States"
+        ,
+        "fiction":"1"
     },
     {
         "original_pub_year":"1995",
@@ -96,6 +104,8 @@
         "author":"Philip Pullman",
         "average_rating":"3.89",
         "author_birthplace":"Norwich, Norfolk, England, The United Kingdom"
+        ,
+        "fiction":"0"
     },
     {
         "lng":-76.14742439999999,
@@ -162,6 +172,8 @@
         "author":"Elie Wiesel",
         "average_rating":"4.26",
         "author_birthplace":"Sighet, Romania"
+        ,
+        "fiction":"0"
     },
     {
         "lng":-76.5168989,
@@ -178,6 +190,8 @@
         "title":"The Hobbit",
         "author_birthplace":"Bloemfontein, South Africa",
         "author_lat":-29.116667
+        ,
+        "fiction":"1"
     },
     {
         "lng":-74.0059413,
@@ -242,6 +256,8 @@
         "author":"Erich Fromm",
         "average_rating":"3.99",
         "author_birthplace":"Frankfurt am Main, Germany"
+        ,
+        "fiction":"0"
     },
     {
         "lng":104.195397,
@@ -272,6 +288,8 @@
         "author":"Elizabeth Gilbert",
         "average_rating":"3.44",
         "author_birthplace":"Waterbury, Connecticut, The United States"
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"1986",
@@ -317,6 +335,8 @@
         "title":"The Epic of Gilgamesh",
         "average_rating":"3.60",
         "author":"Anonymous"
+        ,
+        "fiction":"1"
     },
     {
         "original_pub_year":"2003",
@@ -331,6 +351,8 @@
         "author":"Margaret Atwood",
         "average_rating":"3.60",
         "author_birthplace":"Ottawa, Ontario, Canada"
+        ,
+        "fiction":"1"
     },
     {
         "lng":-95.712891,
@@ -378,6 +400,8 @@
         "author":"Viktor E Frankl",
         "average_rating":"4.32",
         "author_birthplace":"Vienna, Austria"
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"1930",
@@ -392,12 +416,14 @@
         "author":"Sigmund Freud",
         "average_rating":"3.71",
         "author_birthplace":"Freiberg in Mahren, Moravia, Austrian Empire, Czech Republic"
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"-370",
         "author_lng":23.7293599,
         "setting":[
-
+            "Athens, Greece"
         ],
         "author_lat":37.983917,
         "my_rating":"5",
@@ -406,12 +432,14 @@
         "author":"Plato",
         "average_rating":"3.90",
         "author_birthplace":"Athens, Greece"
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"1974",
         "author_lng":-93.26666999999999,
         "setting":[
-
+            "United States"
         ],
         "author_lat":44.983334,
         "my_rating":"2",
@@ -419,7 +447,9 @@
         "title":"Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values",
         "author":"Robert M Pirsig",
         "average_rating":"3.72",
-        "author_birthplace":"Minneapolis, MN, The United States"
+        "author_birthplace":"Minneapolis, MN, The United States",
+        "fiction":"0"
+
     },
     {
         "original_pub_year":"1759",
@@ -455,7 +485,7 @@
         "original_pub_year":"1994",
         "author_lng":135.7680294,
         "setting":[
-
+            "Japan"
         ],
         "author_lat":35.0116363,
         "my_rating":"4",
@@ -463,7 +493,8 @@
         "title":"The Wind-Up Bird Chronicle",
         "author":"Haruki Murakami",
         "average_rating":"4.18",
-        "author_birthplace":"Kyoto, Japan"
+        "author_birthplace":"Kyoto, Japan",
+        "fiction":"0"
     },
     {
         "lng":-71.3489484,
@@ -486,7 +517,7 @@
         "original_pub_year":"1987",
         "author_lng":135.7680294,
         "setting":[
-
+            "Tokyo, Japan"
         ],
         "author_lat":35.0116363,
         "my_rating":"2",
@@ -532,8 +563,7 @@
             "District 12, Panem",
             "Capitol, Panem",
             "Post-apocalyptic America",
-            "Panem",
-            "United States"
+            "Panem"
         ],
         "lat":25.0640996,
         "author":"Suzanne Collins",
@@ -545,6 +575,8 @@
         "title":"The Hunger Games (The Hunger Games, #1)",
         "author_birthplace":"Hartford, Connecticut, The United States",
         "author_lat":41.76371109999999
+        ,
+        "fiction":"1"
     },
     {
         "lng":-3.435973,
@@ -566,7 +598,7 @@
         "original_pub_year":"1884",
         "author_lng":37.5266883,
         "setting":[
-
+            "Russia"
         ],
         "author_lat":54.07027799999999,
         "my_rating":"4",
@@ -575,6 +607,8 @@
         "author":"Leo Tolstoy",
         "average_rating":"3.98",
         "author_birthplace":"Yasnaya Polyana, Tula, Russian Federation"
+        ,
+        "fiction":"0"
     },
     {
         "lng":34.508523,
@@ -592,6 +626,8 @@
         "title":"Heart of Darkness",
         "author_birthplace":"Berdichev (formerly Poland), Ukraine",
         "author_lat":49.9
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"1979",
@@ -606,6 +642,8 @@
         "author":"Madeleine L'Engle",
         "average_rating":"4.42",
         "author_birthplace":"New York, The United States"
+        ,
+        "fiction":"1"
     },
     {
         "original_pub_year":"2002",
@@ -656,6 +694,8 @@
         "author":"CS Lewis",
         "average_rating":"4.14",
         "author_birthplace":"Belfast, Ireland"
+        ,
+        "fiction":"0"
     },
     {
         "original_pub_year":"1940",
@@ -669,7 +709,9 @@
         "title":"The Problem of Pain",
         "author":"CS Lewis",
         "average_rating":"4.11",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"0"
+
     },
     {
         "original_pub_year":"1938",
@@ -684,7 +726,8 @@
         "title":"Out of the Silent Planet (Space Trilogy, #1)",
         "author":"CS Lewis",
         "average_rating":"3.91",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"1"
     },
     {
         "original_pub_year":"1945",
@@ -698,7 +741,8 @@
         "title":"The Great Divorce",
         "author":"CS Lewis",
         "average_rating":"4.27",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"1"
     },
     {
         "original_pub_year":"1925",
@@ -712,7 +756,8 @@
         "title":"The Everlasting Man",
         "author":"GK Chesterton",
         "average_rating":"4.23",
-        "author_birthplace":"Kensington, London, The United Kingdom"
+        "author_birthplace":"Kensington, London, The United Kingdom",
+        "fiction":"0"
     },
     {
         "lng":-3.435973,
@@ -730,7 +775,8 @@
         "id":"184419",
         "title":"The Man Who Was Thursday",
         "author_birthplace":"Kensington, London, The United Kingdom",
-        "author_lat":51.4912
+        "author_lat":51.4912,
+        "fiction":"1"
     },
     {
         "lng":4.895167900000001,
@@ -823,7 +869,6 @@
         "original_pub_year":"1890",
         "author_lng":-6.2603097,
         "setting":[
-
         ],
         "author_lat":53.3498053,
         "my_rating":"5",
@@ -831,7 +876,8 @@
         "title":"The Picture of Dorian Gray",
         "author":"Oscar Wilde",
         "average_rating":"4.02",
-        "author_birthplace":"Dublin, Ireland"
+        "author_birthplace":"Dublin, Ireland",
+        "fiction":"0"
     },
     {
         "lng":-2.9499066,
@@ -865,6 +911,8 @@
         "author":"Plato",
         "average_rating":"3.99",
         "author_birthplace":"Athens, Greece"
+        ,
+        "fiction":"0"
     },
     {
         "lng":12.3155151,
@@ -888,7 +936,7 @@
         "original_pub_year":"1861",
         "author_lng":-1.083333,
         "setting":[
-
+            "United Kingdom"
         ],
         "author_lat":50.816667,
         "my_rating":"0",
@@ -897,6 +945,8 @@
         "author":"Charles Dickens",
         "average_rating":"3.70",
         "author_birthplace":"Portsmouth, The United Kingdom"
+        ,
+        "fiction":"0"
     },
     {
         "lng":2.3522219,
@@ -929,6 +979,7 @@
         "author":"Homer",
         "average_rating":"3.68",
         "author_birthplace":"Greece"
+
     },
     {
         "lng":105.318756,
@@ -1095,7 +1146,8 @@
         "title":"Animal Farm",
         "author":"George Orwell",
         "average_rating":"3.79",
-        "author_birthplace":"Motihari, Bihar, India"
+        "author_birthplace":"Motihari, Bihar, India",
+        "fiction": "1"
     },
     {
         "lng":-90.3892008,
@@ -1353,6 +1405,8 @@
         "author":"Jane Austen",
         "average_rating":"4.23",
         "author_birthplace":"Hampshire, The United Kingdom"
+        ,
+        "fiction":"0"
     },
     {
         "lng":-87.3347472,
@@ -1384,7 +1438,8 @@
         "title":"Surprised by Joy: The Shape of My Early Life",
         "author":"CS Lewis",
         "average_rating":"4.12",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"0"
     },
     {
         "original_pub_year":"1961",
@@ -1398,7 +1453,8 @@
         "title":"A Grief Observed",
         "author":"CS Lewis",
         "average_rating":"4.24",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"0"
     },
     {
         "original_pub_year":"1942",
@@ -1412,7 +1468,8 @@
         "title":"The Screwtape Letters",
         "author":"CS Lewis",
         "average_rating":"4.18",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"0"
     },
     {
         "original_pub_year":"1952",
@@ -1426,6 +1483,7 @@
         "title":"Mere Christianity",
         "author":"CS Lewis",
         "average_rating":"4.28",
-        "author_birthplace":"Belfast, Ireland"
+        "author_birthplace":"Belfast, Ireland",
+        "fiction":"0"
     }
 ]
