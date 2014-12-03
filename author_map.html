@@ -1,32 +1,758 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-    .overlay {
-    fill: none;
-    pointer-events: all;
-    }
-</style>
-<body>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BookSelfie</title>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <style>
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0 0 35px;
+            text-transform: uppercase;
+            font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .light {
+            font-weight: 400;
+        }
+
+        .navbar-custom {
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba(255,255,255,.3);
+            text-transform: uppercase;
+            font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            background-color: #fff;
+        }
+
+        .navbar-custom .navbar-brand {
+            font-weight: 700;
+        }
+
+        .navbar-custom .navbar-brand:focus {
+            outline: 0;
+        }
+
+        .navbar-custom .navbar-brand .navbar-toggle {
+            padding: 4px 6px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .navbar-custom .navbar-brand .navbar-toggle:focus,
+        .navbar-custom .navbar-brand .navbar-toggle:active {
+            outline: 0;
+        }
+
+        .navbar-custom a {
+            color: #fff;
+        }
+
+        .navbar-custom .nav li.active {
+            outline: nonte;
+            background-color: rgba(255,255,255,.3);
+        }
+
+        .navbar-custom .nav li a {
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+        }
+
+        .navbar-custom .nav li a:hover,
+        .navbar-custom .nav li a:focus,
+        .navbar-custom .nav li a.active {
+            outline: 0;
+            background-color: rgba(255,255,255,.3);
+        }
+
+        @media(min-width:767px) {
+            .navbar {
+                padding: 20px 0;
+                border-bottom: 0;
+                letter-spacing: 1px;
+                background: 0 0;
+                -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+                -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+                transition: background .5s ease-in-out,padding .5s ease-in-out;
+            }
+
+            .top-nav-collapse {
+                padding: 0;
+                background-color: #fff;
+            }
+
+            .navbar-custom.top-nav-collapse {
+                border-bottom: 1px solid rgba(255,255,255,.3);
+            }
+        }
+
+        .content-section {
+            padding-top: 100px;
+        }
+
+        body {
+            font: 20px sans-serif;
+
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #fff;
+            shape-rendering: crispEdges;
+        }
+
+        .bar {
+            fill: steelblue;
+        }
+
+        .x.axis path {
+            display: none;
+        }
+
+        #words
+        {
+            border-collapse:separate;
+            border-spacing: 300px 10px;
+            text-align: right;
+        }
+
+        #words2
+        {
+            border-collapse:separate;
+            border-spacing: 200px 10px;
+        }
+
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+
+        .btn-circle i.animated {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+        }
+
+        .btn-circle:hover i.animated {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+
+        .legend
+        {
+            border-collapse:separate;
+            border-spacing: 10px 10px;
+        }
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- I recommend you host this file on your own, since this will change without warning -->
 <script src="datamaps/datamaps.world.min.js"></script>
-<a href = "index.html" style = "font-size: 200%;">Home</a>
-<a href = "author_map.html" style = "font-size: 200%;">Author World Map</a>
-<a href = "author_map_USA.html" style = "font-size: 200%;">Author Map USA</a>
-<a href = "author_map_Europe.html" style = "font-size: 200%;">Author Map Europe</a>
-<p>Red - Ancient (before 1000 AD)</p>
-<p>Purple - Medieval (1000 - 1500 AD)</p>
-<p>Green - Renaissance (1500 - 1800 AD)</p>
-<p>Blue - Romantic (1800-1900 AD)</p>
-<p>Cyan - Modern (1900-1970 AD)</p>
-<p>White - Post-Modern (1970 - present)</p>
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">
+                <i class="fa fa-play-circle"></i>  <span class="light" style ="color:black">BookSELFIE</span>
+            </a>
+        </div>
 
-<p></p>
-<div id="container1" style="position: relative; width: 800px; height: 600px;"></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#worldmap" style = "color:black">AuthorMap</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#europemap" style = "color:black">Europe</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#NAmap" style = "color:black">North America</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#settingmap" style = "color:black">BookSettings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!--World Map Section -->
+<section id="worldmap" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1 style = "color:black">World Map of Author Origins</h1>
+                <div id = "legend1">
+                    <table class = legend align = "center">
+                        <tr>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#FF0000">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Ancient</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#CC00CC">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Medieval</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#00FF00">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Renaissance</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#0066FF">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Romantic</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#00FFFF">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Modern</h6></span></td>
+                            <td style ="border:2px solid black; text-align:center; width:100px; height:20px;line-height: 50px; background-color:#FFFFFF">
+                                <span style = "vertical-align: middle"><h6 style = "color:black;">Post-Modern</h6></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="container1" style="position: relative; width: 800px; height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Europe Map Section -->
+<section id="europemap" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1 style = "color:black">Europe</h1>
+                <div id = "legend2">
+                    <table class = legend align = "center">
+                        <tr>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#FF0000">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Ancient</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#CC00CC">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Medieval</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#00FF00">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Renaissance</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#0066FF">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Romantic</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#00FFFF">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Modern</h6></span></td>
+                            <td style ="border:2px solid black; text-align:center; width:100px; height:20px;line-height: 50px; background-color:#FFFFFF">
+                                <span style = "vertical-align: middle"><h6 style = "color:black;">Post-Modern</h6></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="container2" style="position: relative; width: 800px; height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--NA Map Section -->
+<section id="NAmap" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1 style = "color:black">North America</h1>
+                <div id = "legend3">
+                    <table class = legend align = "center">
+                        <tr>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#FF0000">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Ancient</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#CC00CC">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Medieval</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#00FF00">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Renaissance</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#0066FF">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Romantic</h6></span></td>
+                            <td style ="text-align:center; width:100px; height:20px;line-height: 50px; background-color:#00FFFF">
+                                <span style = "vertical-align: middle"><h6 style = "color:white;">Modern</h6></span></td>
+                            <td style ="border:2px solid black; text-align:center; width:100px; height:20px;line-height: 50px; background-color:#FFFFFF">
+                                <span style = "vertical-align: middle"><h6 style = "color:black;">Post-Modern</h6></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="container3" style="position: relative; width: 800px; height: 600px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Setting Map Section -->
+<section id="settingmap" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1 style = "color:black">World Map of Book Settings</h1>
+                <div id="container4" style="position: relative; width: 80%; height: 600px;"></div>
+                <br><br><br>
+                <div id = "my_div" style = "width: 1000px; height: 300px; margin-left:auto; margin-right:auto;">
+                    <table table id = "words" cellspacing="0px">
+                        <tr>
+                            <td style = "text-align: center; font-size:40px;">Novels</td>
+                            <td style = "text-align: center; font-size:40px;">Essays</td>
+                        </tr>
+                    </table>
+                    <table id = "words2" cellspacing="0px" align = "left">
+                        <br>
+                        <br>
+                        <tr>
+                            <td style = "text-align: center; font-size:20px;">Fantasy</td>
+                            <td style = "text-align: left; font-size:20px;">Real</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+    $(document).ready(function  make_bubbles() {
+        longitude = [];
+        latitude = [];
+        names = [];
+        size = [];
+        d3.json("data/parsed_book_data.json",function(error,data){
+            if (error) return console.warn(error);
+            for(var i = 0; i < data.length; i++)
+            {
+                if(data[i]["author_lng"] && data[i]["author_lat"]) {
+                    longitude[i] = data[i]["author_lng"];
+                    latitude[i] = data[i]["author_lat"];
+                }
+
+                if(data[i]["my_rating"])
+                {
+                    if(names.indexOf(data[i]["author"]) != -1)
+                    {
+                        var dup_pos = names.indexOf(data[i]["author"]);
+                        var size_dup = size[dup_pos];
+
+                        var new_size = +size_dup +  +data[i]["my_rating"];
+                        size[dup_pos] = new_size;
+                        console.log(new_size);
+                    }
+
+                    else
+                        size[i] = data[i]["my_rating"]
+
+                    if(+size[i] > 10)
+                    {
+                        size[i] = +10;
+                    }
+
+                    if(+size[i] < 3 && +size[i] > 0)
+                    {
+                        size[i] = +4;
+                    }
+                }
+
+                else
+                {
+                    size[i] = data[i]["average_rating"];
+                }
+
+                if(data[i]["author"])
+                {
+                    if(names.indexOf(data[i]["author"]) != -1)
+                        continue;
+                    else
+                    {
+                        names[i] = data[i]["author"];
+                    }
+                }
+            }
+
+            var map = new Datamap({
+                scope: 'world',
+                element: document.getElementById('container3'),
+                setProjection: function(element) {
+                    var projection = d3.geo.equirectangular()
+                            .center([-80, 40])
+                            .rotate([10, 0])
+                            .scale(800)
+                            .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+                    var path = d3.geo.path()
+                            .projection(projection);
+
+                    return {path: path, projection: projection};
+                },
+
+                fills: {
+                    defaultFill: '#f0af0a',
+                    lt50: 'rgba(0,244,244,0.9)',
+                    gt50: 'red',
+                    gt500: '#00FFFF',
+                    gt501: '#FFFFFF',
+                    gt502: '#FFFFFF',
+                    gt503: '#FFFFFF',
+                    gt504: '#CC00CC',
+                    gt505: '#FFFFFF',
+                    gt506: '#FFFFFF',
+                    gt507: '#FFFFFF',
+                    gt508: '#FFFFFF',
+                    gt509: '#FFFFFF',
+                    gt5010: '#00FFFF',
+                    gt5011: '#00FFFF',
+                    gt5012: '#00FFFF',
+                    gt5013: '#00FFFF',
+                    gt5014: '#FFFFFF',
+                    gt5015: '#00FFFF',
+                    gt5016: '#FFFFFF',
+                    gt5017: '#FFFFFF',
+                    gt5018: '#FFFFFF',
+                    gt5019: '#FF0000',
+                    gt5020: '#00FF00',
+                    gt5021: '#FFFFFF',
+                    gt5022: '#FFFFFF',
+                    gt5023: '#00FFFF',
+                    gt5024: '#00FFFF',
+                    gt5025: '#00FFFF',
+                    gt5026: '#FF0000',
+                    gt5027: '#FFFFFF',
+                    gt5028: '#00FF00',
+                    gt5029: '#FFFFFF',
+                    gt5030: '#FFFFFF',
+                    gt5031: '#0066FF',
+                    gt5032: '#FFFFFF',
+                    gt5033: '#FFFFFF',
+                    gt5034: '#FFFFFF',
+                    gt5035: '#FFFFFF',
+                    gt5036: '#FFFFFF',
+                    gt5037: '#0066FF',
+                    gt5038: '#0066FF',
+                    gt5039: '#FFFFFF',
+                    gt5040: '#FFFFFF',
+                    gt5041: '#00FFFF',
+                    gt5042: '#00FFFF',
+                    gt5043: '#00FFFF',
+                    gt5044: '#00FFFF',
+                    gt5045: '#00FFFF',
+                    gt5046: '#00FFFF',
+                    gt5047: '#00FFFF',
+                    gt5048: '#00FFFF',
+                    gt5049: '#0066FF',
+                    gt5050: '#00FF00',
+                    gt5051: '#00FFFF',
+                    gt5052: '#00FF00',
+                    gt5053: '#0066FF',
+                    gt5054: '#0066FF',
+                    gt5055: '#FF0000',
+                    gt5056: '#00FF00',
+                    gt5057: '#0066FF',
+                    gt5058: '#0066FF',
+                    gt5059: '#FF0000',
+                    gt5060: '#0066FF',
+                    gt5061: '#0066FF',
+                    gt5062: '#0066FF',
+                    gt5063: '#00FF00',
+                    gt5064: '#00FFFF',
+                    gt5065: '#0066FF',
+                    gt5066: '#00FFFF',
+                    gt5067: '#00FFFF',
+                    gt5068: '#00FFFF',
+                    gt5069: '#00FFFF',
+                    gt5070: '#0066FF',
+                    gt5071: '#FFFFFF',
+                    gt5072: '#00FFFF',
+                    gt5073: '#00FFFF',
+                    gt5074: '#0066FF',
+                    gt5075: '#0066FF',
+                    gt5076: '#00FFFF',
+                    gt5077: '#0066FF',
+                    gt5078: '#0066FF',
+                    gt5079: '#00FFFF',
+                    gt5080: '#00FFFF',
+                    gt5081: '#00FFFF',
+                    gt5082: '#0066FF',
+                    gt5083: '#00FFFF',
+                    gt5084: '#0066FF',
+                    gt5085: '#00FFFF',
+                    gt5086: '#00FFFF',
+                    gt5087: '#00FFFF',
+                    gt5088: '#00FFFF',
+                    gt5089: '#00FFFF'
+                },
+
+                data: {
+                }
 
 
+            })
+
+            bubbles = new Array();
+            for(var i = 0; i < longitude.length; i++)
+            {
+                if(longitude[i])
+                {
+                    if(latitude[i])
+                    {
+                        bubbles.push({'name' : names[i], 'latitude' : latitude[i],
+                            'longitude' : longitude[i], 'radius': size[i]*2, 'fillKey' : 'gt50' + parseInt(i)});
+                    }
+                }
+            }
+
+            map.bubbles(bubbles, {
+                popupTemplate: function (geo, data) {
+                    return "<div class='hoverinfo'>" + data.name + "</div>";
+                }
+            });
+        })
+    })
+</script>
+<script>
+    $(document).ready(function  make_bubbles() {
+        longitude = [];
+        latitude = [];
+        names = [];
+        size = [];
+        d3.json("data/parsed_book_data.json",function(error,data){
+            if (error) return console.warn(error);
+            for(var i = 0; i < data.length; i++)
+            {
+                if(data[i]["author_lng"] && data[i]["author_lat"]) {
+                    longitude[i] = data[i]["author_lng"];
+                    latitude[i] = data[i]["author_lat"];
+                }
+
+                if(data[i]["my_rating"])
+                {
+                    if(names.indexOf(data[i]["author"]) != -1)
+                    {
+                        var dup_pos = names.indexOf(data[i]["author"]);
+                        var size_dup = size[dup_pos];
+
+                        var new_size = +size_dup +  +data[i]["my_rating"];
+                        size[dup_pos] = new_size;
+                        console.log(new_size);
+                    }
+
+                    else
+                        size[i] = data[i]["my_rating"]
+
+                    if(+size[i] > 20)
+                    {
+                        size[i] = +20;
+                    }
+
+                    if(+size[i] < 1 && +size[i] > 0)
+                    {
+                        size[i] = +1;
+                    }
+
+                    if(+size[i] >= 5)
+                    {
+                        size[i] = 10;
+                    }
+                }
+
+                else
+                {
+                    size[i] = data[i]["average_rating"];
+                }
+
+                if(data[i]["author"])
+                {
+                    if(names.indexOf(data[i]["author"]) != -1)
+                        continue;
+                    else
+                    {
+                        names[i] = data[i]["author"];
+                    }
+                }
+            }
+
+            //basic map config with custom fills, mercator projection
+            var map = new Datamap({
+                scope: 'world',
+                element: document.getElementById('container2'),
+                setProjection: function(element) {
+                    var projection = d3.geo.equirectangular()
+                            .center([25, 50])
+                            .rotate([20, 0])
+                            .scale(1000)
+                            .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+                    var path = d3.geo.path()
+                            .projection(projection);
+
+                    return {path: path, projection: projection};
+                },
+
+                fills: {
+                    defaultFill: '#f0af0a',
+                    lt50: 'rgba(0,244,244,0.9)',
+                    gt50: 'red',
+                    gt500: '#00FFFF',
+                    gt501: '#FFFFFF',
+                    gt502: '#FFFFFF',
+                    gt503: '#FFFFFF',
+                    gt504: '#CC00CC',
+                    gt505: '#FFFFFF',
+                    gt506: '#FFFFFF',
+                    gt507: '#FFFFFF',
+                    gt508: '#FFFFFF',
+                    gt509: '#FFFFFF',
+                    gt5010: '#00FFFF',
+                    gt5011: '#00FFFF',
+                    gt5012: '#00FFFF',
+                    gt5013: '#00FFFF',
+                    gt5014: '#FFFFFF',
+                    gt5015: '#00FFFF',
+                    gt5016: '#FFFFFF',
+                    gt5017: '#FFFFFF',
+                    gt5018: '#FFFFFF',
+                    gt5019: '#FF0000',
+                    gt5020: '#00FF00',
+                    gt5021: '#FFFFFF',
+                    gt5022: '#FFFFFF',
+                    gt5023: '#00FFFF',
+                    gt5024: '#00FFFF',
+                    gt5025: '#00FFFF',
+                    gt5026: '#FF0000',
+                    gt5027: '#FFFFFF',
+                    gt5028: '#00FF00',
+                    gt5029: '#FFFFFF',
+                    gt5030: '#FFFFFF',
+                    gt5031: '#0066FF',
+                    gt5032: '#FFFFFF',
+                    gt5033: '#FFFFFF',
+                    gt5034: '#FFFFFF',
+                    gt5035: '#FFFFFF',
+                    gt5036: '#FFFFFF',
+                    gt5037: '#0066FF',
+                    gt5038: '#0066FF',
+                    gt5039: '#FFFFFF',
+                    gt5040: '#FFFFFF',
+                    gt5041: '#00FFFF',
+                    gt5042: '#00FFFF',
+                    gt5043: '#00FFFF',
+                    gt5044: '#00FFFF',
+                    gt5045: '#00FFFF',
+                    gt5046: '#00FFFF',
+                    gt5047: '#00FFFF',
+                    gt5048: '#00FFFF',
+                    gt5049: '#0066FF',
+                    gt5050: '#00FF00',
+                    gt5051: '#00FFFF',
+                    gt5052: '#00FF00',
+                    gt5053: '#0066FF',
+                    gt5054: '#0066FF',
+                    gt5055: '#FF0000',
+                    gt5056: '#00FF00',
+                    gt5057: '#0066FF',
+                    gt5058: '#0066FF',
+                    gt5059: '#FF0000',
+                    gt5060: '#0066FF',
+                    gt5061: '#0066FF',
+                    gt5062: '#0066FF',
+                    gt5063: '#00FF00',
+                    gt5064: '#00FFFF',
+                    gt5065: '#0066FF',
+                    gt5066: '#00FFFF',
+                    gt5067: '#00FFFF',
+                    gt5068: '#00FFFF',
+                    gt5069: '#00FFFF',
+                    gt5070: '#0066FF',
+                    gt5071: '#FFFFFF',
+                    gt5072: '#00FFFF',
+                    gt5073: '#00FFFF',
+                    gt5074: '#0066FF',
+                    gt5075: '#0066FF',
+                    gt5076: '#00FFFF',
+                    gt5077: '#0066FF',
+                    gt5078: '#0066FF',
+                    gt5079: '#00FFFF',
+                    gt5080: '#00FFFF',
+                    gt5081: '#00FFFF',
+                    gt5082: '#0066FF',
+                    gt5083: '#00FFFF',
+                    gt5084: '#0066FF',
+                    gt5085: '#00FFFF',
+                    gt5086: '#00FFFF',
+                    gt5087: '#00FFFF',
+                    gt5088: '#00FFFF',
+                    gt5089: '#00FFFF'
+                },
+
+                data: {
+                }
+
+
+            })
+
+            bubbles = new Array();
+            for(var i = 0; i < longitude.length; i++)
+            {
+                if(longitude[i])
+                {
+                    if(latitude[i])
+                    {
+                        bubbles.push({'name' : names[i], 'latitude' : latitude[i],
+                            'longitude' : longitude[i], 'radius': size[i], 'fillKey' : 'gt50' + parseInt(i)});
+                    }
+                }
+            }
+
+            map.bubbles(bubbles, {
+                popupTemplate: function (geo, data) {
+                    return "<div class='hoverinfo'>" + data.name + "</div>";
+                }
+            });
+        })
+    })
+</script>
 <script>
     $(document).ready(function  make_bubbles() {
         longitude = [];
@@ -203,4 +929,123 @@
         })
     })
 </script>
+<script>
+    //basic map config with custom fills, mercator projection
+    var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container4'),
+        projection: 'mercator',
+
+        fills: {
+            defaultFill: '#f0af0a',
+            lt50: 'rgba(0,244,244,0.9)',
+            gt50: 'red'
+        },
+
+        data: {
+        }
+    })
+
+    function parse_data(){
+        var longitude = new Array();
+        longitude = make_array();
+        return longitude;
+    }
+
+    $(document).ready(function  make_bubbles() {
+        longitude = [];
+        latitude = [];
+        names = [];
+        size = [];
+        var fantasy = 0;
+        var real = 0;
+        var nosetting = 0;
+        d3.json("data/parsed_book_data.json",function(error,data){
+            if (error) return console.warn(error);
+            for(var i = 0; i < data.length; i++)
+            {
+                if(data[i]["lng"] && data[i]["lat"]) {
+                    longitude[i] = data[i]["lng"];
+                    latitude[i] = data[i]["lat"];
+                    real += 1;
+                }
+
+                else if(data[i]["fiction"] == "1")
+                {
+                    fantasy += 1;
+                }
+
+                else
+                {
+                    nosetting+=1;
+                }
+
+                if(data[i]["title"])
+                {
+                    names[i] = data[i]["title"];
+                }
+
+                if(data[i]["my_rating"])
+                {
+                    size[i] = data[i]["my_rating"];
+                }
+
+                else
+                {
+                    size[i] = data[i]["average_rating"];
+                }
+            }
+
+            bubbles = new Array();
+            for(var i = 0; i < longitude.length; i++)
+            {
+                if(longitude[i])
+                {
+                    if(latitude[i])
+                    {
+                        bubbles.push({'name' : names[i], 'latitude' : latitude[i],
+                            'longitude' : longitude[i], 'radius': size[i]*2, 'fillKey' : 'gt50'});
+                    }
+                }
+            }
+
+
+            var m_div = d3.select("#my_div");
+            var m_svg = m_div.append("svg")
+                    .attr("height", 1000)
+                    .attr("width", 1000);
+            var g = m_svg.append("g");
+            g.append("circle")
+                    .attr("name", "Fictional")
+                    .attr("cx", 200)
+                    .attr("cy", 100)
+                    .attr("r", function(d) { return 2*fantasy; })
+                    .attr("style", "fill: steelblue");
+
+            g.append("circle")
+                    .attr("name", "Non-Fictional")
+                    .attr("cx", 500)
+                    .attr("cy", 100)
+                    .attr("r", function(d) { return 2*real; })
+                    .attr("style", "fill: orangered");
+
+            g.append("circle")
+                    .attr("name", "No Setting")
+                    .attr("cx", 800)
+                    .attr("cy", 100)
+                    .attr("r", function(d) { return 2*nosetting; })
+                    .attr("style", "fill: green");
+
+            map.bubbles(bubbles, {
+                popupTemplate: function (geo, data) {
+                    return "<div class='hoverinfo'>It is " + data.name + "</div>";
+                }
+            });
+
+
+
+        })
+    })
+</script>
 </body>
+</html>

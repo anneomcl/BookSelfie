@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BookSelfie</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+    <style>
+
+        body {
+            font: 20px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .bar {
+            fill: steelblue;
+        }
+
+        .x.axis path {
+            display: none;
+        }
+
+        .words
+        {
+            border-collapse:separate;
+            border-spacing: 65px 10px;
+            text-align: right;
+        }
+
+        .words2
+        {
+            border-collapse:separate;
+            border-spacing: 10px 10px;
+        }
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="index.html">
+                <i class="fa fa-play-circle"></i>  <span class="light">Book</span> SELFIE
+            </a>
+
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">Themes</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#love">Love</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#peace">Peace</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#victory">Victory</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#happiness">Happiness</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#she">She</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!--Aggregate Section-->
+<section id="aggregate" class="content-section text-center">
+    <div id = "container">
+        <h1>Emergent Themes</h1><br><br><br><br><br>
+        <table class = "words" cellspacing="0px">
+            <tr style = "padding-bottom: 1px; padding-right: 5000px; padding-left:50px;">
+                <td colspan = "35" style = "text-align:right"><h3></h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>hate</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>war</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>defeat</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>tragedy</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>she</h3></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id = "chart">
+    </div>
+    <div id = "labels">
+        <table class = "words" cellspacing="0px">
+            <tr style = "padding-bottom: 1px; padding-right: 5000px; padding-left:50px;">
+                <td colspan = "35" style = "text-align:right"><h3></h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>love</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>peace</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>victory</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>happiness</h3></td>
+                <td colspan = "35" style = "text-align:right"><h3>he</h3></td>
+            </tr>
+        </table>
+    </div>
+</section>
+<!-- Love Section -->
+<section id="love" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1>Love vs. Hate</h1>
+                <table class = "words2" cellspacing="0px">
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(39.65853658536586,97.36585365853658%,50.65853658536585%)"><h6>A Tale of Two Cities</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(128.33333333333334,62.285714285714285%,59.42857142857143%)"><h6>Beowulf</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(52.67567567567568,92.21621621621621%,51.945945945945944%)"><h6>Candide</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(36.67676767676768,98.54545454545455%,50.36363636363637%)"><h6>Civilization and Its Discontents</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(33.0,100.0%,50.0%)"><h6>Gilgamesh</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(215.0,28.0%,68.0%)"><h6>Hamlet</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(120.04347826086956,65.56521739130434%,58.608695652173914%)"><h6>Heart of Darkness</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(45.37867647058823,95.1029411764706%,51.224264705882355%)"><h6>Les Miserables</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(215.0,28.0%,68.0%)"><h6>Macbeth</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(49.54545454545455,93.45454545454545%,51.63636363636364%)"><h6>Persuasion</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(33.834862385321095,99.6697247706422%,50.08256880733945%)"><h6>Phaedrus</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(54.16279069767442,91.62790697674419%,52.093023255813954%)"><h6>Pride and Prejudice</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(87.60000000000001,78.4%,55.4%)"><h6>The Odyssey</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(56.16363636363637,90.83636363636364%,52.29090909090909%)"><h6>The Picture of Dorian Gray</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(33.50837988826816,99.79888268156424%,50.05027932960894%)"><h6>The Symposium</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(215.0,28.0%,68.0%)"><h6>The Tempest</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(36.084745762711854,98.77966101694915%,50.30508474576271%)"><h6>Walden</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(45.92307692307693,94.88757396449704%,51.27810650887574%)"><h6>Aggregate Count</h6></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Peace Section -->
+<section id="peace" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1>Peace vs. War</h1>
+                <table class = "words2" cellspacing="0px">
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(127.64,62.56%,59.36%)"><h6>A Tale of Two Cities</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(201.13333333333335,33.48571428571429%,66.62857142857143%)"><h6>Beowulf</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(194.2,36.22857142857143%,65.94285714285715%)"><h6>Candide</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(97.99999999999999,74.28571428571429%,56.42857142857143%)"><h6>Civilization and Its Discontents</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(215.0,28.0%,68.0%)"><h6>Gilgamesh</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(115.72727272727273,67.27272727272727%,58.18181818181819%)"><h6>Hamlet</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(169.5,46.0%,63.5%)"><h6>Heart of Darkness</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(165.8,47.463736263736266%,63.13406593406594%)"><h6>Les Miserables</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(137.0,58.857142857142854%,60.285714285714285%)"><h6>Macbeth</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(109.63157894736841,69.6842105263158%,57.578947368421055%)"><h6>Persuasion</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(107.94117647058823,70.35294117647058%,57.411764705882355%)"><h6>Phaedrus</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(87.60000000000001,78.4%,55.4%)"><h6>Pride and Prejudice</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(179.87719298245617,41.89473684210526%,64.52631578947368%)"><h6>The Odyssey</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(97.99999999999999,74.28571428571429%,56.42857142857143%)"><h6>The Picture of Dorian Gray</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(90.19999999999999,77.37142857142857%,55.65714285714286%)"><h6>The Symposium</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(55.75,91.0%,52.25%)"><h6>The Tempest</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(158.31147540983608,50.42622950819673%,62.39344262295082%)"><h6>Walden</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(162.17333333333335,48.89846153846154%,62.77538461538462%)"><h6>Aggregate Count</h6></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Victory Section -->
+<section id="victory" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1>Victory vs. Defeat</h1>
+                <table class = "words2" cellspacing="0px">
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(183.92682926829266,40.29268292682927%,64.92682926829268%)"><h6>A Tale of Two Cities</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(116.41666666666667,67.0%,58.25%)"><h6>Beowulf</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(190.73333333333335,37.6%,65.6%)"><h6>Candide</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(172.17647058823528,44.94117647058823%,63.76470588235294%)"><h6>Civilization and Its Discontents</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(173.0,44.61538461538461%,63.84615384615385%)"><h6>Gilgamesh</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(182.88235294117646,40.705882352941174%,64.82352941176471%)"><h6>Hamlet</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(189.6046511627907,38.04651162790698%,65.48837209302326%)"><h6>Heart of Darkness</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(165.36363636363637,47.63636363636363%,63.09090909090909%)"><h6>Les Miserables</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(194.77777777777777,36.0%,66.0%)"><h6>Macbeth</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(198.45454545454544,34.54545454545455%,66.36363636363636%)"><h6>Persuasion</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(195.8421052631579,35.578947368421055%,66.10526315789474%)"><h6>Phaedrus</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(171.22784810126583,45.31645569620253%,63.67088607594937%)"><h6>Pride and Prejudice</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(172.40425531914894,44.851063829787236%,63.787234042553195%)"><h6>The Odyssey</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(191.83636363636364,37.163636363636364%,65.70909090909092%)"><h6>The Picture of Dorian Gray</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(124.0,64.0%,59.0%)"><h6>The Symposium</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(190.73333333333335,37.6%,65.6%)"><h6>The Tempest</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(200.55555555555557,33.714285714285715%,66.57142857142857%)"><h6>Walden</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(174.73140096618357,43.9304347826087%,64.01739130434783%)"><h6>Aggregate Count</h6></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Happiness Section -->
+<section id="happiness" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1>Happiness vs. Tragedy</h1>
+                <table class = "words2" cellspacing="0px">
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(111.19259259259259,69.06666666666666%,57.733333333333334%)"><h6>A Tale of Two Cities</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(156.58024691358025,51.111111111111114%,62.22222222222222%)"><h6>Beowulf</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(75.0,83.38461538461539%,54.15384615384615%)"><h6>Candide</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(99.40540540540542,73.72972972972973%,56.567567567567565%)"><h6>Civilization and Its Discontents</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(124.0,64.0%,59.0%)"><h6>Gilgamesh</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(101.25,73.0%,56.75%)"><h6>Hamlet</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(132.27272727272725,60.72727272727273%,59.81818181818181%)"><h6>Heart of Darkness</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(80.6031567080045,81.16798196166854%,54.708004509582864%)"><h6>Les Miserables</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(81.53333333333335,80.8%,54.8%)"><h6>Macbeth</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(90.17699115044249,77.38053097345133%,55.65486725663717%)"><h6>Persuasion</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(73.85714285714286,83.83673469387755%,54.04081632653061%)"><h6>Phaedrus</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(63.67415730337078,87.86516853932585%,53.03370786516854%)"><h6>Pride and Prejudice</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(115.60000000000001,67.32307692307691%,58.16923076923077%)"><h6>The Odyssey</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(90.26724137931035,77.34482758620689%,55.66379310344828%)"><h6>The Picture of Dorian Gray</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(105.04166666666667,71.5%,57.125%)"><h6>The Symposium</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(105.8,71.19999999999999%,57.2%)"><h6>The Tempest</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(98.97500000000001,73.9%,56.525%)"><h6>Walden</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(88.82383012190327,77.915847424302%,55.5210381439245%)"><h6>Aggregate Count</h6></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- She Section -->
+<section id="she" class="content-section text-center">
+    <div class="get-section">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2" align="center">
+                <h1>He vs. She</h1>
+                <table class = "words2" cellspacing="0px">
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(95.28155872667399,75.36114160263446%,56.159714599341385%)"><h6>A Tale of Two Cities</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(55.12649332396346,91.24666198172875%,52.18833450456781%)"><h6>Beowulf</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(83.03030303030303,80.20779220779221%,54.94805194805195%)"><h6>Candide</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(50.55511811023623,93.05511811023622%,51.73622047244095%)"><h6>Civilization and Its Discontents</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(82.0515463917526,80.59499263622975%,54.85125184094257%)"><h6>Gilgamesh</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(78.757644394111,81.89807474518686%,54.52548131370328%)"><h6>Hamlet</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(62.838383838383834,88.1958041958042%,52.95104895104895%)"><h6>Heart of Darkness</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(86.36826381707458,78.88728024819028%,55.27817993795243%)"><h6>Les Miserables</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(74.75055679287306,83.48329621380846%,54.12917594654788%)"><h6>Macbeth</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(145.444317749905,55.51653363740023%,61.12086659064994%)"><h6>Persuasion</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(53.16756756756756,92.02162162162162%,51.994594594594595%)"><h6>Phaedrus</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(149.92624318611635,53.74346423406386%,61.56413394148403%)"><h6>Pride and Prejudice</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(87.63994147768838,78.38419897585955%,55.40395025603512%)"><h6>The Odyssey</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(86.6790361445783,78.7643373493976%,55.308915662650605%)"><h6>The Picture of Dorian Gray</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(52.97916666666667,92.09615384615384%,51.97596153846154%)"><h6>The Symposium</h6></td>
+                    </tr>
+
+                    <tr>
+
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(89.53030303030302,77.63636363636364%,55.59090909090909%)"><h6>The Tempest</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(49.873684210526314,93.3246963562753%,51.668825910931176%)"><h6>Walden</h6></td>
+                        <td style ="text-align:center; width:100px; height:100px; background-color:hsl(95.97894199114542,75.08525371778862%,56.228686570552846%)"><h6>Aggregate Count</h6></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Anne McLaughlin 2014</p>
+    </div>
+</footer>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+    var margin = {top: 20, right: 20, bottom: 30, left: 40},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+    var x = d3.scale.ordinal()
+            .rangeRoundBands([0, width], .1);
+
+    var y = d3.scale.linear()
+            .rangeRound([height, 0]);
+
+    var color = d3.scale.ordinal()
+            .range(["#ff8c00","#98abc5"]);
+
+    var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+
+    var svg = d3.select("#chart").append("svg:svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    d3.csv("data/data.csv", function(error, data) {
+        color.domain(d3.keys(data[0]).filter(function(key) { return key !== "State"; }));
+
+        data.forEach(function(d) {
+            var y0 = 0;
+            d.ages = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
+            d.total = d.ages[d.ages.length - 1].y1;
+        });
+
+        data.sort(function(a, b) { return b.total - a.total; });
+
+        x.domain(data.map(function(d) { return d.State; }));
+        y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+        svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis);
+
+        svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis)
+                .append("text")
+                .attr("transform", "rotate(-90)")
+                .attr("y", 6)
+                .attr("dy", ".71em")
+                .style("text-anchor", "end");
+
+        var state = svg.selectAll(".state")
+                .data(data)
+                .enter().append("g")
+                .attr("class", "g")
+                .attr("transform", function(d) { return "translate(" + x(d.State) + ",0)"; });
+
+        state.selectAll("rect")
+                .data(function(d) { return d.ages; })
+                .enter().append("rect")
+                .attr("width", x.rangeBand())
+                .attr("y", function(d) { return y(d.y1); })
+                .attr("height", function(d) { return y(d.y0) - y(d.y1); })
+                .style("fill", function(d) { return color(d.name); });
+    });
+
+</script>
+
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/grayscale.js"></script>
+
+
+
+</body>
+
+</html>
