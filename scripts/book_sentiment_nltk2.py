@@ -20,10 +20,11 @@ def find_fdist(text_name):
 def get_top_nouns_for_all():
     for root,dirs,files in os.walk("C:/Users/Anne/IdeaProjects/BookSelfie/text"):
         for filename in files:
+            print("Starting " + filename)
             filename = os.path.join(root, filename)
             fdist = find_fdist(filename)
-            with open("top_100_nouns.txt", "a")as f:
-                f.write(str(fdist.most_common(100))+'\n')
+            with open("top_200_nouns.txt", "a")as f:
+                f.write(str(fdist.most_common(200))+',\n')
     print("Done!")
 
 def get_concept_count_for_all(name1, name2, array1, array2):
@@ -60,7 +61,6 @@ def find_concept_count(file, array1, array2):
 
 
 '''
-#get_top_nouns_for_all()
 
 get_concept_count_for_all("love", "hate", ['love', 'loving','loved','lover','loves','lovers'],
                           ['hate', 'hating','hated', 'hater','hates','haters'])
@@ -111,4 +111,53 @@ def generate_tiles():
                 i+=1
 
 
-generate_tiles()
+#generate_tiles()
+
+def find_connections():
+    #links = []
+    linked_words = []
+    with open("top_200_nouns.txt","r",encoding = 'utf8') as f:
+        raw = f.read()
+        word_list = ast.literal_eval(raw)
+        i = 0
+        with open("links.txt","a",encoding='utf8') as file:
+            for book in word_list:
+                print("Starting new book " + str(i))
+                word_list_copy = ast.literal_eval(raw)
+                word_list_copy[i] = ''
+                for word_pair in book:
+                    j = 0
+                    for book_copy in word_list_copy:
+                        for word_pair_copy in book_copy:
+                            if word_pair[0] != "Project" and word_pair[0] != "Gutenberg" and \
+                                            word_pair[0] != "Gutenberg-tm" and \
+                                            word_pair[0] != "GUTENBERG-TM" and\
+                                            word_pair[0].lower() == word_pair_copy[0].lower():
+                                value = word_pair[1] + word_pair_copy[1]
+                                value = value/100
+                                #links.append({"source": i ,"target": j,"value": value})
+                                if(value >= 10):
+                                    file.write("{'source': +"+str(i)+" ,'target': "+str(j)+",'value': +" +str(value)+"},\n")
+                                    linked_words.append(word_pair[0])
+                        j+=1
+
+                i+=1
+
+    with open("linked_words.txt","a",encoding='utf8') as file:
+        file.write(str(linked_words))
+
+def generate_nodes():
+    i =0
+    for root,dirs,files in os.walk("C:/Users/Anne/IdeaProjects/BookSelfie/text"):
+        for filename in files:
+            print("Starting " + filename)
+            full_filename = os.path.join(root, filename)
+            with open("nodes.txt", "a") as f:
+                f.write("{'name': +'"+filename+"' ,'group': "+str(i)+"},\n")
+            i+=1
+
+#generate_nodes()
+
+find_connections()
+
+#get_top_nouns_for_all()
